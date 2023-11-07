@@ -11,7 +11,7 @@ git remote add origin git@github.com-projckt:projckt/starter_website-prod.git
 # Pre-build site-server
 cd ..
 cd dev
-cd app-server 
+cd site-server 
 
 # Build site-server
 npm run build
@@ -23,7 +23,7 @@ cp {.gitignore,package.json} ../../prod
 cd .. 
 cd site-frontend 
 
-# Build app-frontend
+# Build site-frontend
 npm run build 
 rsync -av --delete dist/ ../../prod/www
 # rm -rf dist
