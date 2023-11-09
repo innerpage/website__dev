@@ -1,6 +1,6 @@
-cd site-frontend
+cd frontend
 npm install
 cd ..
-cd site-server
+cd server
 npm install
 cd ..

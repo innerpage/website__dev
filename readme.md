@@ -1,30 +1,40 @@
-## Git
+## Clone repo
 
-- Change project remote
+- Clone starter_website-dev.git into the project directory as ./dev
+  `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`
 
-## Initialize both `site-frontend` and `site-server`
+## Enter ./dev (cloned repo)
 
-- `./init.sh` to install NPM dependencies for `site-frontend` and `site-server`
+- cd dev
 
-## ./build.sh
+## Edit git remote
 
-- Change remote to prod_remote
+- `git remote set-url origin git@github.com-{username}:{username}/{repo_name}-dev.git`
 
-## site-frontend/package.json
+## Install dependencies (`./frontend` and `./server`)
 
-- Change `name`
-- Change `description`
+- `./init.sh`
 
-## site-frontend/src/index.html
+## Edit production remote in ./build.sh
 
-- Change `<title></title>`
-- Change `<meta name="Description">`
+- e.g. `git@github.com-{username}:{username}/{repo_name}-prod.git`
 
-## site-server/package.json
+## Edit ./frontend/package.json
 
-- Change `name`
-- Change `description`
+- Edit `name`
+- Edit `description`
 
-## site-server/index.ts
+## Add SEO metadata frontend/src/pages/index.astro
 
-- Change `PORT`
+- This section needs work
+- Add `<title></title>`
+- Add `<meta name="description">`
+
+## Edit ./server/package.json
+
+- Edit `name`
+- Edit `description`
+
+## Edit server/index.ts
+
+- Edit server `PORT`
