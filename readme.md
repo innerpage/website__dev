@@ -1,28 +1,24 @@
 ## Clone repo
 
-- Clone starter_website-dev.git into the project directory as ./dev
-  `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`
+- `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`
+- `cd dev`
 
-## Enter ./dev (cloned repo)
-
-- cd dev
-
-## Edit git remote
+## Edit remote
 
 - `git remote set-url origin git@github.com-{username}:{username}/{repo_name}-dev.git`
 
-## Install dependencies (`./frontend` and `./server`)
+## Install dependencies
 
 - `./init.sh`
 
-## Edit production remote in ./build.sh
+## Edit ./build.sh
 
-- e.g. `git@github.com-{username}:{username}/{repo_name}-prod.git`
+- Change production repo to `git@github.com-{username}:{username}/{repo_name}-prod.git`
 
 ## Edit ./frontend/package.json
 
-- Edit `name`
-- Edit `description`
+- Change `name`
+- Change `description`
 
 ## Add SEO metadata frontend/src/pages/index.astro
 
@@ -32,9 +28,9 @@
 
 ## Edit ./server/package.json
 
-- Edit `name`
-- Edit `description`
+- Change `name`
+- Change `description`
 
 ## Edit server/index.ts
 
-- Edit server `PORT`
+- Change server `PORT`
