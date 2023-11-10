@@ -20,11 +20,10 @@
 - Change `name`
 - Change `description`
 
-## Add SEO metadata frontend/src/pages/index.astro
+## Edit <meta> and <title>
 
-- This section needs work
-- Add `<title></title>`
-- Add `<meta name="description">`
+- Change `<meta name="description">` in ./frontend/src/layouts/Layout.astro
+- Change `title` prop of `Layout` in pages accordingly
 
 ## Edit ./server/package.json
 
