@@ -30,6 +30,6 @@
 - Change `name`
 - Change `description`
 
-## Edit server/index.ts
+## Edit ./server/index.ts
 
 - Change server `PORT`
