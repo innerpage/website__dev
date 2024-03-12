@@ -20,7 +20,7 @@
 - Change `name`
 - Change `description`
 
-## Edit <meta> and <title>
+## Edit `<meta>` and `<title>`
 
 - Change `<meta name="description">` in ./frontend/src/layouts/Layout.astro
 - Change `title` prop of `Layout` in pages accordingly
