@@ -8,19 +8,11 @@ cd prod
 git init
 git remote add origin git@github.com-{username}:{username}/{repo_name}-prod.git
 
-## Build server
-cd ..
-cd dev
-cd server 
-npm run build
-rsync -av dest/ ../../prod
-cp {.gitignore,package.json} ../../prod
-
 ## Build ./frontend
 cd .. 
 cd frontend 
 npm run build 
-rsync -av --delete dist/ ../../prod/www
+rsync -av --delete dist/ ../../prod
 
 ## Push prod 
 cd ..
@@ -30,8 +22,6 @@ git add --all
 git commit -m "Deploy build `date`"
 git push origin main --force
 
-## Install modules in prod
-npm install 
 
 ## Reset
 cd ..

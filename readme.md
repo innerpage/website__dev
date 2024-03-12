@@ -24,12 +24,3 @@
 
 - Change `<meta name="description">` in ./frontend/src/layouts/Layout.astro
 - Change `title` prop of `Layout` in pages accordingly
-
-## Edit ./server/package.json
-
-- Change `name`
-- Change `description`
-
-## Edit ./server/index.ts
-
-- Change server `PORT`
