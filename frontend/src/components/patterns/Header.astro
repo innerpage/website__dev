@@ -1,0 +1,27 @@
+---
+import NavBar from "./NavBar.astro"
+import Link from "../elements/Link.astro"
+---
+
+
+<header>
+    <Link href="/" target="">
+      <img width="120" src="../../../public/logo.png" />
+    </Link>
+    <NavBar>
+        <Link href="/pricing" target="">Pricing</Link>
+        <Link href="/docs" target="">Docs</Link>
+        <Link href="/blog" target="">Blog</Link>
+        <Link href="/support" target="">Support</Link>
+    </NavBar>
+    <p>Login/Signup</p>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc(var(--site__padding) * 2) 0;
+    }
+</style>

@@ -1,0 +1,32 @@
+---
+import NavBar from "./NavBar.astro"
+import Link from "../elements/Link.astro"
+---
+
+<footer>
+    <Link href="/" target="">
+      <img width="120" src="../../../public/logo.png" />
+    </Link>
+    <p>
+        <a href="">Link 1</a>
+        <br/>
+        <a href="">Link 2</a>
+    </p>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: calc(var(--site__padding) * 2) 0;
+    }
+
+    footer img {
+      filter: grayscale(1);
+      opacity: 0.6;
+    }
+
+    footer img:hover {
+      opacity: 0.8;
+    }
+</style>
