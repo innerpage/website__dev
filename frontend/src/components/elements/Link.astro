@@ -1,18 +1,55 @@
 ---
 interface Props {
 	href:string;
-    target:string;
+    target?:string;
+    variant?:string;
+    fill?:string;
+    theme?:string;
 }
 
-const { href,  target } = Astro.props;
+const { href, target, variant, fill, theme } = Astro.props;
 ---
 
-<a href={href} target={target}>
+<a class=`${variant} ${variant}__${fill}--${theme}` href={href} target={target}>
     <slot></slot>
 </a>
 
 <style>
     a {
         text-decoration: none;
+        color: var(--color__blue--regular);
+    }
+
+    a:hover {
+        color: var(--color__blue--light);
+    }
+
+    /* Button */
+
+    .button {
+        padding: calc(var(--site__padding)/2) var(--site__padding);
+        border-radius: var(--site__border-radius);
+    }
+
+    .button:active {
+        opacity: 0.6;
+    }
+
+    .button__outline--default {
+        border: 1px solid var(--color__blue--regular);
+    }
+
+    .button__outline--default:hover {
+        color: var(--color__blue--regular);
+        background: var(--color__blue--lightest);
+    }
+
+    .button__solid--default {
+        background: var(--color__blue--regular);
+        color: white;
+    }
+    .button__solid--default:hover {
+        background: var(--color__blue--dark);
+        color: white;
     }
 </style>

@@ -1,20 +1,25 @@
 ---
 import NavBar from "./NavBar.astro"
 import Link from "../elements/Link.astro"
+import { Vars } from "../../script/vars"
 ---
 
 
 <header>
-    <Link href="/" target="">
+    <Link href="/">
       <img width="100" src="../../../public/logo.png" />
     </Link>
     <NavBar width="400">
-        <Link href="/pricing" target="">Pricing</Link>
-        <Link href="/docs" target="">Docs</Link>
-        <Link href="/blog" target="">Blog</Link>
-        <Link href="/contact-us" target="">Contact Us</Link>
+        <Link href="/pricing">Pricing</Link>
+        <Link href="/docs">Docs</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/contact-us">Contact Us</Link>
     </NavBar>
-    <p>Login/Signup</p>
+    <div>
+        <Link href={Vars.app.url} variant="button" fill="outline" theme="default">Log in</Link>
+        &nbsp;&nbsp;
+        <Link href={Vars.app.url} variant="button" fill="solid" theme="default">Sign up</Link>
+    </div>
 </header>
 <style>
     header {
