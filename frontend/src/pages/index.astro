@@ -3,10 +3,10 @@ import Site from "../layouts/Site.astro"
 import Section from "../components/container/Section.astro"
 import { Vars } from "../script/vars"
 
-const title = "Starter website — Tagline"
+const title = `${Vars.product.name} — Tagline`
 ---
 
-<Site title={title} description={Vars.sitedescription}>
+<Site title={title} description={Vars.product.description}>
 	<Section>
 		Homepage
 	</Section>

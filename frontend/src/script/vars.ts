@@ -1,7 +1,9 @@
 export const Vars = {
-  site: {
+  product: {
     name: "Website Starter",
     description: "This is a starter template",
+  },
+  site: {
     email: "support@sitename.com",
     url: "https://sitename.com",
   },
