@@ -1,0 +1,13 @@
+---
+import Site from "../../../layouts/Site.astro"
+import Section from "../../../components/container/Section.astro"
+import { Vars } from "../../../script/vars"
+
+const title = `Getting Started — ${Vars.product.name}`
+---
+
+<Site title={title} description={Vars.product.description}>
+	<Section>
+		Getting Started
+	</Section>
+</Site>

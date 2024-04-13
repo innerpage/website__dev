@@ -10,4 +10,7 @@ export const Vars = {
   app: {
     url: "https://app.sitename.com",
   },
+  social: {
+    twitter: "https://twitter.com",
+  },
 };

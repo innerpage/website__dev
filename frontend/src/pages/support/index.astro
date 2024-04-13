@@ -1,10 +1,13 @@
 ---
 import Site from "../../layouts/Site.astro"
+import Section from "../../components/container/Section.astro"
 import { Vars } from "../../script/vars"
 
 const title = `Support — ${Vars.product.name}`
 ---
 
 <Site title={title} description={Vars.product.description}>
-	<h1>Support</h1>
+	<Section>
+		Support
+	</Section>
 </Site>
