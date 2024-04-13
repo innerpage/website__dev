@@ -1,10 +1,13 @@
 ---
 import Site from "../layouts/Site.astro"
+import Section from "../components/container/Section.astro"
 import { Vars } from "../script/vars"
 
 const title = "Starter website — Tagline"
 ---
 
 <Site title={title} description={Vars.site.description}>
-	<h1>Homepage</h1>
+	<Section>
+		Homepage
+	</Section>
 </Site>

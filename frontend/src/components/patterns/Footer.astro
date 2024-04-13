@@ -1,32 +1,81 @@
 ---
-import NavBar from "./NavBar.astro"
 import Link from "../elements/Link.astro"
+import { Vars } from "../../script/vars"
 ---
 
 <footer>
-    <Link href="/" target="">
-      <img width="120" src="../../../public/logo.png" />
-    </Link>
+  <div class="separator separator--first"></div>
+  <div class="row">
+    <article>
+      <label><strong>Resources</strong></label>
+      <Link href="/" target=""> Getting Started </Link><br/>
+      <Link href="/" target=""> Documentation </Link><br/>
+      <Link href="/" target=""> Blog </Link>
+    </article>
+    <article>
+      <label><strong>Support</strong></label>
+      <Link href="/" target=""> FAQ </Link><br/>
+      <Link href="/" target=""> Twitter </Link><br/>
+      <Link href="/" target=""> Write to us </Link><br/>
+    </article>
+    <article>
+      <label><strong>Other links</strong></label>
+      <Link href="/" target=""> Terms of Service </Link><br/>
+      <Link href="/" target=""> Privacy Policy </Link><br/>
+      <Link href="/" target=""> Cancellation & Refund </Link>
+    </article>
+  </div>
+  <div class="separator separator--second"></div>
+  <div class="row row--second">
+    <Link href="/" target=""> 
+      <img width="100" src="../../../public/logo.png" /> 
+    </Link> 
     <p>
-        <a href="">Link 1</a>
-        <br/>
-        <a href="">Link 2</a>
+      © {new Date().getFullYear()}&nbsp;{Vars.site.name}
     </p>
+    
+  </div>
 </footer>
 
 <style>
     footer {
-        display: flex;
-        justify-content: space-between;
-        padding: calc(var(--site__padding) * 2) 0;
+        padding: calc(var(--site__padding) * 1.2) 0;
     }
 
     footer img {
       filter: grayscale(1);
-      opacity: 0.6;
+      opacity: 0.5;
     }
 
     footer img:hover {
       opacity: 0.8;
+    }
+
+    label {
+      display: block;
+      color: var(--color__grey--regular);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .row--second {
+      justify-content: space-around;
+    }
+
+    .separator {
+      width: 100%;
+      height: 1px;
+      background: var(--color__grey--lighter);
+    }
+
+    .separator--first {
+      margin-bottom: 1.5em;
+    }
+
+    .separator--second {
+      margin: 1.5em 0;
     }
 </style>

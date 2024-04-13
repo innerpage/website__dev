@@ -6,9 +6,9 @@ import Link from "../elements/Link.astro"
 
 <header>
     <Link href="/" target="">
-      <img width="120" src="../../../public/logo.png" />
+      <img width="100" src="../../../public/logo.png" />
     </Link>
-    <NavBar>
+    <NavBar width="400">
         <Link href="/pricing" target="">Pricing</Link>
         <Link href="/docs" target="">Docs</Link>
         <Link href="/blog" target="">Blog</Link>
@@ -16,12 +16,11 @@ import Link from "../elements/Link.astro"
     </NavBar>
     <p>Login/Signup</p>
 </header>
-
 <style>
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: calc(var(--site__padding) * 2) 0;
+        padding: var(--site__padding) 0;
     }
 </style>
