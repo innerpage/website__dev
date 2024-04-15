@@ -5,12 +5,13 @@ interface Props {
     variant?:string;
     fill?:string;
     theme?:string;
+    size?:string;
 }
 
-const { href, target, variant, fill, theme } = Astro.props;
+const { href, target, variant, fill, theme, size } = Astro.props;
 ---
 
-<a class=`${variant} ${variant}__${fill}--${theme}` href={href} target={target}>
+<a class=`${variant} ${variant}__${fill}--${theme} ${size}` href={href} target={target}>
     <slot></slot>
 </a>
 
@@ -51,5 +52,9 @@ const { href, target, variant, fill, theme } = Astro.props;
     .button__solid--default:hover {
         background: var(--color__blue--dark);
         color: white;
+    }
+
+    .large {
+        font-size: 1.5em;
     }
 </style>

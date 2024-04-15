@@ -1,0 +1,34 @@
+---
+import Card from "../container/Card.astro"
+import Link from "../elements/Link.astro"
+
+interface Props {
+    quote: string;
+	name: string;
+    designation: string;
+    website?: string;
+    linkedin?: string;
+}
+
+const { quote, name, designation } = Astro.props
+---
+
+<Card variant="testimonial">
+    <p class="quote">
+		<em>{quote}</em>
+	</p>
+    <p>
+        <strong>{name}</strong>
+    </p>
+	<p>{designation}</p>
+</Card>
+
+<style>
+    .quote {
+		line-height: 1.5;
+		margin-bottom: 0.5em;
+        border-bottom: 1px solid var(--color__grey--light);
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+	}
+</style>

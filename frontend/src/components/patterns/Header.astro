@@ -2,12 +2,22 @@
 import NavBar from "./NavBar.astro"
 import Link from "../elements/Link.astro"
 import { Vars } from "../../script/vars"
+
+interface Props {
+	location?: string;
+}
+
+const { location } = Astro.props;
+
 ---
 
 
 <header>
     <Link href="/">
-      <img width="100" src="../../../public/logo.png" />
+      { location === "blog" || "docs" ? 
+        <img width="100" src="../../../public/logo.png" /> :
+        <img width="100" src={`../../../public/logo-${location}.png`} />
+      }
     </Link>
     <NavBar width="400">
         <Link href="/pricing">Pricing</Link>
