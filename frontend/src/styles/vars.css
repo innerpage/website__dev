@@ -1,18 +1,21 @@
 :root {
-  --site__font-size--body: 15px;
-  --site__font-size--display: 1.5em;
-  --site__font-size--heading: 1.25em;
-  --site__font-size--footnote: 0.8em;
+  --font-size__body: 15px;
+  --font-size__display: 1.5em;
+  --font-size__heading: 1.25em;
+  --font-size__footnote: 0.8em;
+  --font-weight__display: 700;
+  --font-weight__heading: 500;
+  --font-weight__body: 400;
+  --font-family__sans-serif: "IBM Plex Sans", sans-serif;
+  --font-family__serif: "IBM Plex Serif", serif;
 
-  --site__font-weight--display: 700;
-  --site__font-weight--heading: 500;
-  --site__font-weight--body: 400;
-  --site__padding: 1em;
-  --site__border-radius: 0.5em;
-  --site__line-height: 1.8;
+  --padding: 1em;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  --border__input: 1px solid rgba(0, 0, 0, 0.2);
+  --border-radius: 0.5em;
+  --line-height: 1.8;
 
   --color__site--background: #121212;
-
   --color__blue--darkest: #032844;
   --color__blue--darker: #054272;
   --color__blue--dark: #065c9f;
@@ -20,15 +23,13 @@
   --color__blue--light: #84c2f1;
   --color__blue--lighter: #e6f3fc;
   --color__blue--lightest: #f3f9fe;
-
-  --color__grey--darkest: #262626;
-  --color__grey--darker: #404040;
-  --color__grey--dark: #5a5a5a;
-  --color__grey--regular: #808080;
-  --color__grey--light: #c0c0c0;
-  --color__grey--lighter: rgba(0, 0, 0, 0.1);
-  --color__grey--lightest: #f9f9f9;
-
+  --color__grey--darkest: rgba(0, 0, 0, 0.8);
+  --color__grey--darker: rgba(0, 0, 0, 0.7);
+  --color__grey--dark: rgba(0, 0, 0, 0.6);
+  --color__grey--regular: rgba(0, 0, 0, 0.5);
+  --color__grey--light: rgba(0, 0, 0, 0.3);
+  --color__grey--lighter: rgba(0, 0, 0, 0.2);
+  --color__grey--lightest: rgba(0, 0, 0, 0.1);
   --color__green--darkest: #00372c;
   --color__green--darker: #005c4a;
   --color__green--dark: #008168;
@@ -36,7 +37,6 @@
   --color__green--light: #80dcca;
   --color__green--lighter: #e6f8f4;
   --color__green--lightest: #f2fcfa;
-
   --color__orange--darkest: #45260a;
   --color__orange--darker: #8a4c14;
   --color__orange--dark: #a15818;
@@ -44,7 +44,6 @@
   --color__orange--light: #f3bf91;
   --color__orange--lighter: #f8d8bd;
   --color__orange--lightest: #fdf2e9;
-
   --color__red--darkest: #400e0f;
   --color__red--darker: #6b1819;
   --color__red--dark: #962222;

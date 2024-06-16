@@ -1,5 +1,6 @@
 {
-  "name": "frontend",
+  "name": "Website Starter",
+  "description": "Dev codebase of Website Starter",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

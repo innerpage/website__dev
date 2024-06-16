@@ -2,8 +2,8 @@
 @import "vars.css";
 
 body {
-  font-size: var(--site__font-size--body);
+  font-size: var(--font-size__body);
   color: var(--color__grey--dark);
   font-family: "IBM Plex Sans", sans-serif;
-  line-height: var(--site__line-height);
+  line-height: var(--line-height);
 }

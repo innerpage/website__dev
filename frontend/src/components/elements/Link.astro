@@ -11,50 +11,62 @@ interface Props {
 const { href, target, variant, fill, theme, size } = Astro.props;
 ---
 
-<a class=`${variant} ${variant}__${fill}--${theme} ${size}` href={href} target={target}>
+<a class=`${variant} ${variant}__${fill}--${theme} ${variant}__${size}` href={href} target={target}>
     <slot></slot>
 </a>
 
 <style>
+    /* Link */
     a {
         text-decoration: none;
         color: var(--color__blue--regular);
+        transition: all 0.25s;
     }
-
     a:hover {
+        color: var(--color__blue--dark);
+    }
+    a:active {
         color: var(--color__blue--light);
     }
 
     /* Button */
-
     .button {
-        padding: calc(var(--site__padding)/2) var(--site__padding);
-        border-radius: var(--site__border-radius);
+         background: none;
+        border: 0;
+        font-size: 1em;
+        border-radius: var(--border-radius);
+        transition: all 0.25s;
+        padding: calc(var(--padding) / 1.6) calc(var(--padding) / 1.5);
     }
 
-    .button:active {
-        opacity: 0.6;
-    }
-
-    .button__outline--default {
-        border: 1px solid var(--color__blue--regular);
-    }
-
-    .button__outline--default:hover {
-        color: var(--color__blue--regular);
-        background: var(--color__blue--lightest);
-    }
-
+    /* Button (Solid) */
     .button__solid--default {
+        font-weight: 600;
+        border: 1px solid var(--color__blue--regular);
         background: var(--color__blue--regular);
         color: white;
     }
     .button__solid--default:hover {
         background: var(--color__blue--dark);
-        color: white;
+    }
+    .button__solid--default:active {
+        background: var(--color__blue--light);
     }
 
-    .large {
+     /* Button (Outline) */
+    .button__outline--default {
+        border: 1px solid var(--color__blue--regular);
+        color: var(--color__blue--regular);
+    }
+    .button__outline--default:hover {
+        background: var(--color__blue--lightest);
+    }
+    .button__ghost--default:active {
+        color: var(--color__blue--lighter);
+    }
+
+     /* Button (Large) */
+    .button__large {
         font-size: 1.25em;
     }
 </style>

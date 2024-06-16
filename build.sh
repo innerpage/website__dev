@@ -8,8 +8,7 @@ rsync -av --delete frontend/dist/ ../prod
 
 ## Init git in ../prod
 git init ../prod
-# git -C ../prod remote add origin git@github.com-{username}:{username}/{repo_name}__prod.git
-git -C ../prod remote add origin git@github.com-projckt:projckt/starter_website-prod.git
+git -C ../prod remote add origin git@github.com-innerpage:innerpage/website__prod.git
 
 ## Push ..prod 
 git -C ../prod add --all

@@ -1,7 +1,7 @@
 ---
 import NavBar from "./NavBar.astro"
 import Link from "../elements/Link.astro"
-import { Vars } from "../../script/vars"
+import { Var } from "../../script/var"
 
 interface Props {
 	location?: string;
@@ -26,9 +26,9 @@ const { location } = Astro.props;
         <Link href="/contact-us">Contact Us</Link>
     </NavBar>
     <div>
-        <Link href={Vars.app.url} variant="button" fill="outline" theme="default">Log in</Link>
+        <Link href={Var.app.url} variant="button" fill="outline" theme="default">Log in</Link>
         &nbsp;&nbsp;
-        <Link href={Vars.app.url} variant="button" fill="solid" theme="default">Sign up</Link>
+        <Link href={Var.app.url} variant="button" fill="solid" theme="default">Sign up</Link>
     </div>
 </header>
 <style>
@@ -36,6 +36,6 @@ const { location } = Astro.props;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--site__padding) 0;
+        padding: var(--padding) 0;
     }
 </style>

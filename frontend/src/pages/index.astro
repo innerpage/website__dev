@@ -4,20 +4,17 @@ import Section from "../components/container/Section.astro"
 import Testimonial from "../components/patterns/Testimonial.astro"
 import Gallery from "../components/container/Gallery.astro"
 import Link from "../components/elements/Link.astro"
-
-import { Vars } from "../script/vars"
-
-const title = `${Vars.product.name} — Tagline`
+import { Var } from "../script/var"
 ---
 
-<Site title={title} description={Vars.product.description}>
+<Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
 	<Section>
 		<div class="hero">
 			<h1>Header: Introduce an epic hook or explain the why? of the product</h1>
 			<h2>Sub-header: Explain what? and how? of the product</h2>
-			<Link href={Vars.app.url} variant="button" fill="outline" theme="default" size="large">Demo</Link>
+			<Link href={Var.app.url} variant="button" fill="outline" theme="default" size="large">Demo</Link>
         	&nbsp;&nbsp;
-        	<Link href={Vars.app.url} variant="button" fill="solid" theme="default" size="large">Get Started</Link>
+        	<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="large">Get Started</Link>
 		</div>
 	</Section>
 	<Section>
@@ -77,6 +74,6 @@ const title = `${Vars.product.name} — Tagline`
 		width: 300px;
 		height: 70px;
 		background: var(--color__grey--lighter);
-		border-radius: var(--site__border-radius);
+		border-radius: var(--border-radius);
 	}
 </style>

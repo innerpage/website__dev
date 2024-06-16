@@ -1,3 +1,1 @@
-cd frontend
-npm install
-cd ..
+npm install --prefix frontend

@@ -1,6 +1,6 @@
 ---
 import Link from "../elements/Link.astro"
-import { Vars } from "../../script/vars"
+import { Var } from "../../script/var"
 ---
 
 <footer>
@@ -28,14 +28,14 @@ import { Vars } from "../../script/vars"
   <div class="separator separator--second"></div>
   <div class="row row--second">
     <p>
-      © {new Date().getFullYear()}&nbsp;{Vars.product.name}
+      © {new Date().getFullYear()}&nbsp;{Var.app.name}
     </p>
   </div>
 </footer>
 
 <style>
     footer {
-        padding: calc(var(--site__padding) * 1.2) 0;
+        padding: var(--padding) 0;
     }
 
     footer img {
@@ -63,8 +63,7 @@ import { Vars } from "../../script/vars"
 
     .separator {
       width: 100%;
-      height: 1px;
-      background: var(--color__grey--lighter);
+      border: var(--border);
     }
 
     .separator--first {
