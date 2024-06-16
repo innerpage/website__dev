@@ -1,20 +1,17 @@
-## Build ./frontend
-cd frontend
-npm run build 
-rsync -av --delete dist/ ../../prod
+## Delete old files
+rm -rf ../prod
+mkdir ../prod
 
-# Init git in ./prod
-cd ..
-cd ..
-cd prod
-git init
-git remote add origin git@github.com-sensefolks:sensefolks/website-prod.git
+## Build frontend
+npm run --prefix frontend build 
+rsync -av --delete frontend/dist/ ../prod
 
-## Push prod 
-git add --all
-git commit -m "Deploy build `date`"
-git push origin main --force
+## Init git in ../prod
+git init ../prod
+# git -C ../prod remote add origin git@github.com-{username}:{username}/{repo_name}__prod.git
+git -C ../prod remote add origin git@github.com-projckt:projckt/starter_website-prod.git
 
-## Reset
-cd ..
-cd dev
+## Push ..prod 
+git -C ../prod add --all
+git -C ../prod commit -m "Deploy build `date`"
+git -C ../prod push origin main --force
