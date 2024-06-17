@@ -1,6 +1,6 @@
 ## Clone repo
 
-✅ `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`
+✅ `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`<br/>
 ✅ `cd dev`
 
 <hr/>
@@ -25,7 +25,7 @@
 
 ## Edit ./frontend/package.json
 
-✅ Change `name`
+✅ Change `name`<br/>
 ✅ Change `description`
 
 <hr/>
