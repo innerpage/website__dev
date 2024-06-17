@@ -1,6 +1,6 @@
 {
-  "name": "Website Starter",
-  "description": "Dev codebase of Website Starter",
+  "name": "InnerPage — The Anonymous Journal",
+  "description": "Your safest place",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
