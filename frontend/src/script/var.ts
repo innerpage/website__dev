@@ -1,7 +1,7 @@
 export const Var = {
   app: {
     name: "InnerPage",
-    description: "An Anonymous Journal",
+    description: "The Anonymous Journal",
     tagline: "Your safest place",
     contact: {
       email: "innerpage.journal@gmail.com",
