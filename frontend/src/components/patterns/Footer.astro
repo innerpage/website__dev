@@ -3,15 +3,9 @@ import Link from "../elements/Link.astro"
 import { Var } from "../../script/var"
 ---
 
-<footer>
+<!-- <footer>
   <div class="separator separator--first"></div>
   <div class="row">
-    <article>
-      <label><strong>Resources</strong></label>
-      <Link href="/docs/getting-started"> Getting Started </Link><br/>
-      <Link href="/docs"> Documentation </Link><br/>
-      <Link href="/blog"> Blog </Link>
-    </article>
     <article>
       <label><strong>Support</strong></label>
       <Link href="/faq"> FAQ </Link><br/>
@@ -22,7 +16,6 @@ import { Var } from "../../script/var"
       <label><strong>Other links</strong></label>
       <Link href="/terms-of-service"> Terms of Service </Link><br/>
       <Link href="/privacy-policy"> Privacy Policy </Link><br/>
-      <Link href="/cancellation-and-refund"> Cancellation & Refund </Link>
     </article>
   </div>
   <div class="separator separator--second"></div>
@@ -31,11 +24,20 @@ import { Var } from "../../script/var"
       © {new Date().getFullYear()}&nbsp;{Var.app.name}
     </p>
   </div>
+</footer> -->
+
+<footer>
+    <p>
+      © {new Date().getFullYear()}&nbsp;{Var.app.name}
+    </p>
+    
 </footer>
 
 <style>
     footer {
-        padding: var(--padding) 0;
+      text-align: center;
+      padding: var(--padding) 0;
+      padding-bottom: 4em;
     }
 
     footer img {

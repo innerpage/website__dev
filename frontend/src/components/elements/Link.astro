@@ -17,21 +17,25 @@ const { href, target, variant, fill, theme, size } = Astro.props;
 
 <style>
     /* Link */
+
     a {
         text-decoration: none;
-        color: var(--color__blue--regular);
+        color: var(--color__blue--200);
         transition: all 0.25s;
     }
+
     a:hover {
-        color: var(--color__blue--dark);
+        color: var(--color__blue--100);
     }
+
     a:active {
-        color: var(--color__blue--light);
+        color: var(--color__blue--300);
     }
+
 
     /* Button */
     .button {
-         background: none;
+        background: none;
         border: 0;
         font-size: 1em;
         border-radius: var(--border-radius);
@@ -41,28 +45,30 @@ const { href, target, variant, fill, theme, size } = Astro.props;
 
     /* Button (Solid) */
     .button__solid--default {
-        font-weight: 600;
-        border: 1px solid var(--color__blue--regular);
-        background: var(--color__blue--regular);
-        color: white;
+        border: 1px solid var(--color__white--brighter);
+        background: var(--color__white--brighter);
+        color: #121212;
     }
     .button__solid--default:hover {
-        background: var(--color__blue--dark);
+        background: var(--color__white--brightest);
+        color: #121212;
     }
     .button__solid--default:active {
-        background: var(--color__blue--light);
+        background: none;
+        color: #121212;
     }
 
      /* Button (Outline) */
     .button__outline--default {
-        border: 1px solid var(--color__blue--regular);
-        color: var(--color__blue--regular);
+        border: 1px solid var(--color__white--regular);
+        color: var(--color__white--brighter);
     }
     .button__outline--default:hover {
-        background: var(--color__blue--lightest);
+        border: 1px solid var(--color__white--brighter);
     }
     .button__ghost--default:active {
-        color: var(--color__blue--lighter);
+        color: var(--color__white--regular);
+        border: 1px solid var(--color__white--dim);
     }
 
      /* Button (Large) */

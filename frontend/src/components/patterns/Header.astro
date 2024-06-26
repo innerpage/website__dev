@@ -1,7 +1,5 @@
 ---
-import NavBar from "./NavBar.astro"
 import Link from "../elements/Link.astro"
-import { Var } from "../../script/var"
 
 interface Props {
 	location?: string;
@@ -14,22 +12,9 @@ const { location } = Astro.props;
 
 <header>
     <Link href="/">
-      { location === "blog" || "docs" ? 
-        <img width="100" src="../../../public/logo.png" /> :
-        <img width="100" src={`../../../public/logo-${location}.png`} />
-      }
+      <img width="140" src="../../../public/logotype_white_transparent.png" />
     </Link>
-    <NavBar width="400">
-        <Link href="/pricing">Pricing</Link>
-        <Link href="/docs">Docs</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/contact-us">Contact Us</Link>
-    </NavBar>
-    <div>
-        <Link href={Var.app.url} variant="button" fill="outline" theme="default">Log in</Link>
-        &nbsp;&nbsp;
-        <Link href={Var.app.url} variant="button" fill="solid" theme="default">Sign up</Link>
-    </div>
+    <Link href="/contact-us">Contact Us</Link>
 </header>
 <style>
     header {

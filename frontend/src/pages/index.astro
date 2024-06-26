@@ -1,8 +1,6 @@
 ---
 import Site from "../layouts/Site.astro"
 import Section from "../components/container/Section.astro"
-import Testimonial from "../components/patterns/Testimonial.astro"
-import Gallery from "../components/container/Gallery.astro"
 import Link from "../components/elements/Link.astro"
 import { Var } from "../script/var"
 ---
@@ -10,46 +8,18 @@ import { Var } from "../script/var"
 <Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
 	<Section>
 		<div class="hero">
-			<h1>Header: Introduce an epic hook or explain the why? of the product</h1>
-			<h2>Sub-header: Explain what? and how? of the product</h2>
-			<Link href={Var.app.url} variant="button" fill="outline" theme="default" size="large">Demo</Link>
-        	&nbsp;&nbsp;
-        	<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="large">Get Started</Link>
+			<h1>Feel Better..</h1>
+			<h2>InnerPage is an <u>anonymous journal</u> to pour out your deepest thoughts and feelings, free from judgment or prying eyes. <strong>It is your safest place!</strong></h2>
+			<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="large"><strong>Start Writing</strong></Link>
 		</div>
 	</Section>
 	<Section>
-		<Gallery>
-			<Testimonial 
-				quote="Lorem Ipsum is simply dummy text of the printing and typesetting industry" 
-				name="John Doe" 
-				designation="Founder @ Company Name">
-			</Testimonial>
-			<Testimonial 
-				quote="Lorem Ipsum is simply dummy text of the printing and typesetting industry" 
-				name="John Doe" 
-				designation="Founder @ Company Name">
-			</Testimonial>
-			<Testimonial 
-				quote="Lorem Ipsum is simply dummy text" 
-				name="John Doe" 
-				designation="Founder @ Company Name">
-			</Testimonial>
-			<div class="social-proof__logo"></div>
-			<div class="social-proof__logo"></div>
-			<div class="social-proof__logo"></div>
-			<div class="social-proof__logo"></div>
-			<div class="social-proof__logo"></div>
-			<div class="social-proof__logo"></div>
-		</Gallery>
-	</Section>
-	<Section>
-		<h1>Core benefits of using the products (Max. 4 benefits)</h1>
-	</Section>
-	<Section>
-		<h1>Additional benefits of the product (Max. 8 benefits)</h1>
-	</Section>
-	<Section>
-		<h1>Call to action</h1>
+		<div class="hero">
+			<h1>Support Us</h1>
+			<h2>By donating you not only keep InnerPage afloat but also make the benefits of journaling accessible to others</h2>
+			<iframe id='kofiframe' src='https://ko-fi.com/innerpage/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:350px;padding:4px;background:#f9f9f9;border-radius: 0.5em;' height='600' title='innerpage'></iframe>
+		</div>
+		
 	</Section>
 </Site>
 
@@ -65,7 +35,7 @@ import { Var } from "../script/var"
 		line-height: 1.2em;
 	}
 	.hero h2 {
-		margin: 1em 0;
+		margin: 0.5em 0 1.25em 0;
 		font-weight: 400;
 		font-size: 1.5em;
 	}
@@ -75,5 +45,9 @@ import { Var } from "../script/var"
 		height: 70px;
 		background: var(--color__grey--lighter);
 		border-radius: var(--border-radius);
+	}
+
+	iframe {
+		background: #121212;
 	}
 </style>

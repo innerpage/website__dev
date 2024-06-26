@@ -2,12 +2,42 @@
 import Site from "../../layouts/Site.astro"
 import Section from "../../components/container/Section.astro"
 import { Var } from "../../script/var"
+import Link from "../../components/elements/Link.astro"
 
 const title = `Contact Us — ${Var.app.name}`
 ---
 
 <Site title={title} description={Var.app.description}>
 	<Section>
-		Contact Us
+		<main>
+			<h1>Contact Us</h1>
+			<h2>For assistance, reporting bugs or feature requests, kindly reach out to us:</h2>
+			<h2>
+				Email:<br/>
+				<Link href={`mailto:${Var.app.contact.email}`}><strong>innerpage.journal@gmail.com</strong></Link>
+			</h2>
+			<h2>
+				Twitter:<br/>
+				<Link href={Var.app.contact.social.twitter} target="_blank"><strong>@InnerPage</strong></Link>
+			</h2>
+		</main>
 	</Section>
 </Site>
+
+<style>
+	main {
+		text-align: center;
+	}
+
+	h1 {
+		font-family: "IBM Plex Serif", serif;
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+
+	h2 {
+		margin: 0.5em 0 1.25em 0;
+		font-weight: 400;
+		font-size: 1.5em;
+	}
+</style>
