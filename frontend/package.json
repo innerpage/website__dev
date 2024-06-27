@@ -1,6 +1,6 @@
 {
-  "name": "InnerPage — The Anonymous Journal",
-  "description": "Your safest place",
+  "name": "InnerPage — Your safest place",
+  "description": "InnerPage is an privacy-centric journal to pour out your deepest thoughts and feelings, free from judgment or prying eyes. It is your safest place!",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
