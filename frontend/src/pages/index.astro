@@ -15,16 +15,40 @@ import { Var } from "../script/var"
 	</Section>
 	<Section>
 		<div class="hero">
-			<div class="privacy__feature__container">
-				<h1>Privacy Commitment</h1>
-				<br/>
-				<div class="privacy__feature__list">
+			<h1>Why Journal?</h1>
+			<br/>
+			<div class="link__container">
+				<h2 style="margin: 0">
+					<Link target="_blank" href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html">What’s All This About Journaling?</Link>
+				</h2>
+				<p class="footnote">THE NEW YORK TIMES</p>
+				<h2 style="margin:0; margin-top: 1em;">
+					<em>"One of the more effective acts of self-care is also, happily, one of the cheapest"</em>
+				</h2>
+				
+			</div>
+			<br/>
+			<div class="link__container">
+				<h2 style="margin: 0">
+					<Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4">The expressive writing method</Link>
+				</h2>
+				<p class="footnote">JAMES PENNEBAKER (YOUTUBE)</p>
+				<h2 style="margin:0; margin-top: 1em;">
+					<em>"Study after study showed that writing about traumatic experience had significant effect on mental health, physical health & a variety of other behaviours"</em>
+				</h2>
+			</div>
+		</div>
+	</Section>
+	<Section>
+		<div class="hero">
+			<h1>Privacy Commitment</h1>
+			<br/>
+			<div class="privacy__feature__list">
 					<h2>✅&nbsp;&nbsp;Username & Password only</h2>
 					<h2>✅&nbsp;&nbsp;No contact details needed</h2>
 					<h2>✅&nbsp;&nbsp;No server logs</h2>
 					<h2>✅&nbsp;&nbsp;Even we can't read your notes</h2>
 				</div>
-			</div>
 		</div>
 	</Section>
 	<Section>
@@ -61,7 +85,7 @@ import { Var } from "../script/var"
 		border-radius: var(--border-radius);
 	}
 
-	.privacy__feature__container {
+	.link__container {
 		width: 340px;
 		margin: 0 auto;
 		text-align: left;
@@ -71,10 +95,21 @@ import { Var } from "../script/var"
 	}
 
 	.privacy__feature__list {
-		text-align: left
+		text-align: left;
+		width: 340px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.link__h2 {
+		margin: 0;
 	}
 
 	iframe {
 		background: #121212;
+	}
+
+	.footnote {
+		opacity: 0.6;
 	}
 </style>
