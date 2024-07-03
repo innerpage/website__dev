@@ -3,7 +3,7 @@ export const Var = {
     name: "InnerPage",
     description:
       "InnerPage is a privacy-centric digital journal. Pour out your deepest thoughts and feelings anonymously. It is your safest place!",
-    tagline: "Your safest place",
+    tagline: "Your journey to inner peace 🌸",
     contact: {
       email: "innerpage.journal@gmail.com",
       url: "https://innerpage.org/contact-us",
