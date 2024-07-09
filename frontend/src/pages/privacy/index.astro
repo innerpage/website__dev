@@ -1,0 +1,55 @@
+---
+import Site from "../../layouts/Site.astro"
+import Section from "../../components/container/Section.astro"
+import { Var } from "../../script/var"
+import Link from "../../components/elements/Link.astro"
+
+const title = `Privacy Policy — ${Var.app.name}`
+---
+
+<Site title={title} description={Var.app.description}>
+	<Section>
+		<main>
+			<h1>Privacy</h1>
+			<br/>
+			<p>Welcome to InnerPage &mdash; Your Safest Place</p>
+			<br/>
+			<p>At InnerPage, we believe that your personal reflections should remain truly personal. Our privacy-centric digital journal is designed with your confidentiality as our top priority. Your anonymity isn't just a feature; it's the foundation value of InnerPage. Your thoughts are protected here, so feel free to express yourself.</p>
+			<br/>
+			<h2>Our commitments</h2>
+			<ul>
+				<li>
+					<strong>No Identifying Information:</strong> <br/>To join InnerPage, all you need is a username and password. We do not require your email address, phone number, or any other identifiable information. Your identity remains completely anonymous, allowing you to focus solely on your journaling experience.
+				</li>
+				<li>
+					<strong>Anonymous Journaling:</strong><br/> Your entries are yours alone. We don't have access to your content and can't link it to any real-world identity.
+				</li>
+				<li>
+					<strong>Zero Data Collection:</strong><br/> We don't track your usage, analyze your writing, or collect any data about your journaling habits. We do not maintain server access logs as well.
+				</li>
+				<li>
+					<strong>Your Data, Your Control:</strong><br/> You have full control over your data. You can easily delete your account and all associated journal entries at any time.
+				</li>
+				<li>
+					<strong>No Third-Party Sharing:</strong><br/> We will NEVER share your data with third parties. Your journal entries are yours alone, and we are committed to keeping them that way.
+				</li>
+			</ul>
+			<p>Thank you for choosing InnerPage. We look forward to being a part of your journey of your healing, self-discovery & inner peace</p>
+		</main>
+	</Section>
+</Site>
+
+<style>
+	main {
+		max-width: 640px;
+		text-align: center;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	li {
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid var(--color__white--dimmer);
+	}
+</style>

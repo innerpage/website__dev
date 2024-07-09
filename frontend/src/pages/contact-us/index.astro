@@ -11,15 +11,14 @@ const title = `Contact Us — ${Var.app.name}`
 	<Section>
 		<main>
 			<h1>Contact Us</h1>
-			<h2>For assistance, reporting bugs or feature requests, kindly reach out to us:</h2>
-			<h2>
-				Email:<br/>
-				<Link href={`mailto:${Var.app.contact.email}`}><strong>innerpage.journal@gmail.com</strong></Link>
-			</h2>
-			<h2>
-				Twitter:<br/>
-				<Link href={Var.app.contact.social.twitter} target="_blank"><strong>@TheInnerPage</strong></Link>
-			</h2>
+			<br/>
+			<p>For assistance, reporting bugs or feature requests, kindly reach out to us:</p>
+			<p>
+				<Link href={`mailto:${Var.app.contact.email}`}><strong>{Var.app.contact.email}</strong></Link>
+			</p>
+			<p>
+				<Link href={Var.app.contact.social.twitter} target="_blank"><strong>{Var.app.contact.social.twitter}</strong></Link>
+			</p>
 		</main>
 	</Section>
 </Site>
@@ -27,17 +26,5 @@ const title = `Contact Us — ${Var.app.name}`
 <style>
 	main {
 		text-align: center;
-	}
-
-	h1 {
-		font-family: "IBM Plex Serif", serif;
-		font-size: 2.5em;
-		line-height: 1.2em;
-	}
-
-	h2 {
-		margin: 0.5em 0 1.25em 0;
-		font-weight: 400;
-		font-size: 1.25em;
 	}
 </style>

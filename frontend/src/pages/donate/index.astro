@@ -1,0 +1,25 @@
+---
+import Site from "../../layouts/Site.astro"
+import Section from "../../components/container/Section.astro"
+import { Var } from "../../script/var"
+import Link from "../../components/elements/Link.astro"
+
+const title = `Support — ${Var.app.name}`
+---
+
+<Site title={title} description={Var.app.description}>
+	<Section>
+		<main>
+			<h1>Donate</h1>
+			<br/>
+			<p>Your donating will keep InnerPage aflot and make journaling accessible to others</p><br/>
+			<iframe id='kofiframe' src='https://ko-fi.com/innerpage/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:350px;padding:4px;background:#f9f9f9;border-radius: 0.5em;' height='600' title='innerpage'></iframe>
+		</main>
+	</Section>
+</Site>
+
+<style>
+	main {
+		text-align: center;
+	}
+</style>
