@@ -24,9 +24,13 @@
   --color__white--dimmer: rgba(255, 255, 255, 0.2);
   --color__white--dimmest: rgba(255, 255, 255, 0.1);
 
-  --color__blue--100: #bbdefb;
-  --color__blue--200: #90caf9;
-  --color__blue--300: #64b5f6;
+  /* --color__blue--100: #f3e5f5;
+  --color__blue--200: #e1bee7;
+  --color__blue--300: #ce93d8; */
+
+  --color__blue--100: #d1c4e9;
+  --color__blue--200: #b39ddb;
+  --color__blue--300: #9575cd;
 
   --color__red--100: #ffcdd2;
   --color__red--200: #ef9a9a;

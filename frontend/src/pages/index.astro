@@ -3,6 +3,7 @@ import Site from "../layouts/Site.astro"
 import Section from "../components/container/Section.astro"
 import Link from "../components/elements/Link.astro"
 import { Var } from "../script/var"
+import Card from "../components/container/Card.astro"
 ---
 
 <Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
@@ -14,27 +15,65 @@ import { Var } from "../script/var"
 	<Section>
 		<div class="hero">
 			<h1>Improve your mental health</h1>
-			<p>InnerPage is a <strong>private digital journal for privacy conscious people</strong>. Pour out your deepest thoughts and feelings <strong>anonymously</strong></p>
+			<p>InnerPage is a <strong>secure & private digital journal for privacy conscious people</strong>. Pour out your deepest thoughts and feelings <strong>anonymously</strong></p>
 			<br/>
 			<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="large"><strong>Start Writing</strong></Link>
 		</div>
+		<br/><br/><br/><br/>
+		<article>
+			<Card>
+				<p style="margin:0; margin-top: 1em;">
+					<em>"One of the more effective acts of self-care is also, happily, one of the cheapest"</em>
+				</p>
+				<div class="row-reverse">
+					<p>
+						<Link target="_blank" href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"><strong>What’s All This About Journaling?</strong></Link><br/> <span class="footnote">THE NEW YORK TIMES</span>
+					</p>
+				</div>
+				<div class="seperator"></div>
+				<p style="margin:0; margin-top: 1em;">
+					<em>"The process of putting emotions into words seems to unintentionally activate a process of emotion regulation"</em>
+				</p>
+				<div class="row-reverse">
+					<p>
+						<Link target="_blank" href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"><strong>Putting feelings into words</strong></Link><br/> <span class="footnote">EDIT LAB, KING's COLLEGE LONDON</span>
+					</p>
+				</div>
+				<div class="seperator"></div>
+				<p style="margin:0; margin-top: 1em;">
+					<em>"Study after study showed that writing about traumatic experience had significant effect on mental health, physical health & a variety of other behaviours"</em>
+				</p>
+				<div class="row-reverse">
+					<p>
+						<Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4"><strong>The expressive writing method</strong></Link><br/> <span class="footnote">JAMES PENNEBAKER</span>
+					</p>
+				</div>
+			</Card>
+		</article>
+	</Section>
+
+	<Section>
+		<main>
+			<h2>How journaling improves mental health?</h2>
+			<article>
+				<p>Journaling has been shown to have various benefits for mental health, supported by numerous studies and expert opinions. Here are some key ways journaling can improve mental health:</p>
+				<br/><br/>
+				<ul>
+					<li>Reduces Stress and Anxiety</li>
+					<li>Enhances Emotional Regulation</li>
+					<li>Improves Mood and Well-being</li>
+					<li>Facilitates Problem Solving and Cognitive Function</li>
+					<li>Boosts Memory and Immune Function</li>
+					<li>Enhances Self-Awareness and Encourages Mindfulness</li>
+				</ul>
+			</article>
+
+			
+		</main>
 	</Section>
 	<Section>
 		<main>
-			<h2>Benefits of journaling</h2>
-			<p style="margin:0; margin-top: 1em;">
-				<em>"One of the more effective acts of self-care is also, happily, one of the cheapest"</em>
-			</p>
-			<p class="footnote">
-				<Link target="_blank" href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"><strong>What’s All This About Journaling?</strong></Link><br/> The New York Times
-			</p>
-			<div class="separator--short"></div>
-			<p style="margin:0; margin-top: 1em;">
-				<em>"Study after study showed that writing about traumatic experience had significant effect on mental health, physical health & a variety of other behaviours"</em>
-			</p>
-			<p class="footnote">
-				<Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4"><strong>The expressive writing method</strong></Link><br/> James Pennebaker
-			</p>
+			<h2>InnerPage for Private & Secure Digital Journaling</h2>
 		</main>
 	</Section>
 </Site>
@@ -48,14 +87,14 @@ import { Var } from "../script/var"
 
 	main {
 		text-align: center;
-		max-width: 480px;
 		margin: 0 auto;
 	}
 
 	.footnote {
 		margin-top: 0.5em;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		font-family: var(--font-family__sans-serif);
+		color: var(--color__white--regular);
 	}
 
 	.petal {
@@ -77,6 +116,35 @@ import { Var } from "../script/var"
 		top: 40vh;
 		left: -10%;
 		animation: blowing 9s 3s linear infinite;
+	}
+
+	article {
+		max-width: 560px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.seperator {
+		border-top: 1px solid var(--color__white--dim);
+		width: 100%;
+		margin: 2em 0;
+	}
+
+	.row-reverse {
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: right;
+		margin-top: 1em;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid var(--color__white--dimmer);
 	}
 
 @keyframes blowing {
