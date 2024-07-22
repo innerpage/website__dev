@@ -17,7 +17,7 @@ import Card from "../components/container/Card.astro"
 	<Section>
 		<div class="hero">
 			<h1>Improve your mental health</h1>
-			<p>InnerPage is a <strong>secure & private digital journal for privacy conscious people</strong>. Pour out your deepest thoughts and feelings <strong>anonymously</strong></p>
+			<p>InnerPage is a <strong>private and secure digital journal for privacy conscious people</strong>. Pour out your deepest thoughts and feelings <strong>anonymously</strong></p>
 			<br/>
 			<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="large"><strong>Start Writing</strong></Link>
 		</div>
@@ -84,6 +84,19 @@ import Card from "../components/container/Card.astro"
 					<li><span class="material-symbols-outlined">check</span> <strong>Zero Data Collection</strong><br/><p class="subtext">We never track, analyze, or store your journaling habits</p></li>
 					<li><span class="material-symbols-outlined">check</span> <strong>User Data Control</strong><br/><p class="subtext">Delete your account and entries anytime, without any hassle</p></li>
 					<li><span class="material-symbols-outlined">check</span> <strong>No Third-Party Sharing</strong><br/><p class="subtext">Your private thoughts stay private - we never share your notes</p></li>
+				</ul>
+			</article>
+		</main>
+	</Section>
+	<Section>
+		<main>
+			<h2>Contact Us</h2>
+			<article>
+				<p>Kindly reach out to us for any kind of assistance, feature requests or bug reports:</p>
+				<br/>
+				<ul>
+					<li><strong>Email:</strong>&nbsp;&nbsp;<Link href={`mailto:${Var.app.contact.email}`}><strong>{Var.app.contact.email}</strong></Link></li>
+					<li><strong>Twitter:</strong>&nbsp;&nbsp;<Link href={Var.app.contact.social.twitter} target="_blank"><strong>{Var.app.contact.social.twitter}</strong></Link></li>
 				</ul>
 			</article>
 		</main>

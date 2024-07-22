@@ -1,0 +1,101 @@
+---
+import Site from "../../layouts/Site.astro"
+import Section from "../../components/container/Section.astro"
+import Link from "../../components/elements/Link.astro"
+import { Var } from "../../script/var"
+
+
+---
+
+<Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
+	<Section>
+		<main>
+			<h1>Blog</h1>
+			<article>
+				<ul>
+					<Link href="./blog/2024/july/innerpage-secure-and-private-digital-journal">
+						<li>
+							Welcome to InnerPage — Your Secure & Private Digital Journal
+							<br/><span class="date"> July 2024</span>
+						</li>
+					</Link>
+					<!-- <Link href="/blog">
+						<li>
+							A comparison of secure & private digital journals (2024)
+							<br/><span class="date">03 July 2024</span>
+						</li>
+					</Link>
+					<Link href="/blog">
+						<li>
+							The Benefits of Journaling for Mental Health
+							<br/><span class="date">01 July 2024</span>
+						</li>
+					</Link> -->
+				</ul>
+			</article>
+			<!-- <article>
+				<p>Our blog is dedicated to exploring the profound impact of journaling on mental health. Join us as we delve into the intersection of journaling and psychology, empowering you to transform your inner mindscape one entry at a time.</p>
+				<br/>
+				<h2>2024</h2>
+				<div class="seperator"></div>
+			</article> -->
+		</main>
+	</Section>
+</Site>
+
+<style>
+	main {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.footnote {
+		margin-top: 0.5em;
+		font-size: 0.8em;
+		font-family: var(--font-family__sans-serif);
+		color: var(--color__white--regular);
+	}
+
+	article {
+		max-width: 560px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.seperator {
+		border-top: 1px solid var(--color__white--dim);
+		width: 100%;
+		margin: 0.5em 0;
+	}
+
+	.row-reverse {
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: right;
+		margin-top: 1em;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		/* margin-bottom: 2em;
+		padding-bottom: 2em; */
+		padding: 1em;
+	}
+
+	li:hover {
+		background: var(--color__white--dimmest);
+	}
+
+	.subtext {
+		margin-left: 1.5em;
+	}
+
+	.date {
+		font-size: 0.8em;
+		font-family: var(--font-family__sans-serif);
+		color: var(--color__white--regular);
+	}
+</style>
