@@ -45,8 +45,8 @@ const { href, target, variant, fill, theme, size } = Astro.props;
 
     /* Button (Solid) */
     .button__solid--default {
-        border: 1px solid var(--color__white--brighter);
-        background: var(--color__white--brighter);
+        border: 1px solid var(--color__gray--200);
+        background: var(--color__gray--200);
         color: #121212;
     }
     .button__solid--default:hover {
@@ -60,15 +60,15 @@ const { href, target, variant, fill, theme, size } = Astro.props;
 
      /* Button (Outline) */
     .button__outline--default {
-        border: 1px solid var(--color__white--regular);
-        color: var(--color__white--brighter);
+        border: 1px solid var(--color__gray--400);
+        color: var(--color__gray--300);
     }
     .button__outline--default:hover {
-        border: 1px solid var(--color__white--brighter);
+        border: 1px solid var(--color__gray--300);
     }
     .button__ghost--default:active {
-        color: var(--color__white--regular);
-        border: 1px solid var(--color__white--dim);
+        color: var(--color__gray--400);
+        border: 1px solid var(--color__gray--600);
     }
 
      /* Button (Large) */

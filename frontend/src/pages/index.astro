@@ -61,16 +61,14 @@ import Card from "../components/container/Card.astro"
 				<p>Journaling has been shown to have various benefits for mental health, supported by numerous studies and expert opinions. Here are some key ways journaling can improve mental health:</p>
 				<br/><br/>
 				<ul>
-					<li><strong></strong><span class="material-symbols-outlined">check</span> <strong>Reduces Stress and Anxiety</strong></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Enhances Emotional Regulation</strong></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Improves Mood and Well-being</strong></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Facilitates Problem Solving and Cognitive Function</strong></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Boosts Memory and Immune Function</strong></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Enhances Self-Awareness and Encourages Mindfulness</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Reduces Stress and Anxiety</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Enhances Emotional Regulation</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Improves Mood and Well-being</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Facilitates Problem Solving and Cognitive Function</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Boosts Memory and Immune Function</strong></li>
+					<li class="list-item__icon-label"><span class="material-symbols-outlined">check</span> <strong>Enhances Self-Awareness and Encourages Mindfulness</strong></li>
 				</ul>
 			</article>
-
-			
 		</main>
 	</Section>
 	<Section>
@@ -80,10 +78,32 @@ import Card from "../components/container/Card.astro"
 				<p>We believe  your personal reflections should remain truly personal. Our privacy-centric digital journal is designed with your confidentiality as our top priority. Your anonymity isn't just a feature; it's the foundation value of InnerPage. Here is how InnerPage fulfills your secure & private journalling needs:</p>
 				<br/><br/>
 				<ul>
-					<li><span class="material-symbols-outlined">check</span> <strong>100% Anonymous Sign-Up</strong><br/><p class="subtext">No email or phone number required - just choose a username and password</p></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>Zero Data Collection</strong><br/><p class="subtext">We never track, analyze, or store your journaling habits</p></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>User Data Control</strong><br/><p class="subtext">Delete your account and entries anytime, without any hassle</p></li>
-					<li><span class="material-symbols-outlined">check</span> <strong>No Third-Party Sharing</strong><br/><p class="subtext">Your private thoughts stay private - we never share your notes</p></li>
+					<li class="list-item__icon-label">
+						<span class="material-symbols-outlined">check</span>
+						<div>	
+							<p><strong>100% Anonymous Sign-Up</strong></p>
+							<p>No email or phone number required - just choose a username and password</p>
+						</div> 
+					</li>
+					<li class="list-item__icon-label">
+						<span class="material-symbols-outlined">check</span> 
+						<div>
+							<p><strong>Zero Data Collection</strong></p>
+							<p>We never track, analyze, or store your journaling habits</p>
+						</div>
+					</li>
+					<li class="list-item__icon-label">
+						<span class="material-symbols-outlined">check</span> 
+						<div>
+							<p><strong>User Data Control</strong></p>
+							<p>Delete your account and entries anytime, without any hassle</p>
+						</div>
+					</li>
+					<li class="list-item__icon-label">
+						<span class="material-symbols-outlined">check</span> 
+						<p><strong>No Third-Party Sharing</strong></p>
+						<p>Your private thoughts stay private - we never share your notes</p>
+					</li>
 				</ul>
 			</article>
 		</main>
@@ -104,6 +124,10 @@ import Card from "../components/container/Card.astro"
 </Site>
 
 <style>
+	.list-item__icon-label {
+		display: flex;
+	}
+
 	.hero {
 		text-align: center;
 		max-width: 750px;

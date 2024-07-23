@@ -4,10 +4,10 @@
 body {
   background: var(--color__site--background);
   font-size: var(--font-size__body);
-  color: var(--color__white--brighter);
+  color: var(--color__gray--300);
   font-family: var(--font-family__serif);
   line-height: var(--line-height);
-  width: 95%;
+  width: 90%;
   max-width: 1040px;
   margin: 0 auto;
 }
@@ -46,24 +46,24 @@ ul {
 li {
   margin-bottom: 2em;
   padding-bottom: 2em;
-  border-bottom: 1px solid var(--color__white--dimmer);
+  border-bottom: 1px solid var(--color__gray--800);
 }
 
 .date {
   font-size: 0.8em;
   font-family: var(--font-family__sans-serif);
-  color: var(--color__white--regular);
+  color: var(--color__gray--400);
 }
 
 .footnote {
   margin-top: 0.5em;
   font-size: 0.8em;
   font-family: var(--font-family__sans-serif);
-  color: var(--color__white--regular);
+  color: var(--color__gray--400);
 }
 
 .seperator {
-  border-top: 1px solid var(--color__white--dim);
+  border-top: 1px solid var(--color__gray--800);
   width: 100%;
   margin: 2em 0;
 }
@@ -73,8 +73,4 @@ li {
   flex-direction: row-reverse;
   text-align: right;
   margin-top: 1em;
-}
-
-.subtext {
-  margin-left: 1.5em;
 }

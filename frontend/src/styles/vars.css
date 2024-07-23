@@ -10,20 +10,21 @@
   --font-family__serif: "IBM Plex Serif", serif;
 
   --padding: 1em;
-  --border: 1px solid var(--color__white--dimmer);
-  --border__input: 1px solid var(--color__white--dim);
+  --border: 1px solid var(--color__gray--800);
+  --border__input: 1px solid var(--color__gray--600);
   --border-radius: 0.5em;
   --line-height: 1.8;
 
   --color__site--background: #121212;
 
   --color__gray--100: #f5f5f5;
-  --color__white--200: #eeeeee;
-  --color__white--300: #e0e0e0;
-  --color__white--400: #bdbdbd;
-  --color__white--600: #757575;
-  --color__white--700: #616161;
-  --color__white--800: #424242;
+  --color__gray--200: #eeeeee;
+  --color__gray--300: #e0e0e0;
+  --color__gray--400: #bdbdbd;
+  --color__gray--600: #757575;
+  --color__gray--700: #616161;
+  --color__gray--800: #424242;
+  --color__gray--900: #212121;
 
   --color__blue--100: #d1c4e9;
   --color__blue--200: #b39ddb;

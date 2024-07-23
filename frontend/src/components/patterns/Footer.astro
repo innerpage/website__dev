@@ -2,29 +2,6 @@
 import { Var } from "../../script/var"
 ---
 
-<!-- <footer>
-  <div class="separator separator--first"></div>
-  <div class="row">
-    <article>
-      <label><strong>Support</strong></label>
-      <Link href="/faq"> FAQ </Link><br/>
-      <Link href="https://twitter.com" target="_blank"> Twitter </Link><br/>
-      <Link href="/contact-us"> Contact Us </Link><br/>
-    </article>
-    <article>
-      <label><strong>Other links</strong></label>
-      <Link href="/terms-of-service"> Terms of Service </Link><br/>
-      <Link href="/privacy-policy"> Privacy Policy </Link><br/>
-    </article>
-  </div>
-  <div class="separator separator--second"></div>
-  <div class="row row--second">
-    <p>
-      © {new Date().getFullYear()}&nbsp;{Var.app.name}
-    </p>
-  </div>
-</footer> -->
-
 <footer>
     <p>
       © {new Date().getFullYear()}&nbsp;{Var.app.name}
@@ -36,41 +13,5 @@ import { Var } from "../../script/var"
       text-align: center;
       padding: var(--padding) 0;
       padding-bottom: 4em;
-    }
-
-    footer img {
-      filter: grayscale(1);
-      opacity: 0.5;
-    }
-
-    footer img:hover {
-      opacity: 0.8;
-    }
-
-    label {
-      display: block;
-      color: var(--color__grey--regular);
-    }
-
-    .row {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .row--second {
-      justify-content: space-around;
-    }
-
-    .separator {
-      width: 100%;
-      border: var(--border);
-    }
-
-    .separator--first {
-      margin-bottom: 1.5em;
-    }
-
-    .separator--second {
-      margin: 1.5em 0;
     }
 </style>
