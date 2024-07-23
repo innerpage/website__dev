@@ -11,5 +11,8 @@ export const Var = {
       },
     },
     url: "https://app.innerpage.org",
+    website: {
+      url: "https://innerpage.org",
+    },
   },
 };

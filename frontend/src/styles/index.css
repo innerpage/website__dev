@@ -28,13 +28,13 @@ h2 {
 }
 
 article {
-  max-width: 560px;
+  max-width: 480px;
   margin: 0 auto;
   text-align: left;
 }
 
 main {
-  max-width: 560px;
+  max-width: 480px;
   text-align: center;
   margin: 0 auto;
 }
