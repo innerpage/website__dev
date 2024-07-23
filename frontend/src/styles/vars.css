@@ -16,17 +16,14 @@
   --line-height: 1.8;
 
   --color__site--background: #121212;
-  --color__white--brightest: rgba(255, 255, 255, 1);
-  --color__white--brighter: rgba(255, 255, 255, 0.87);
-  --color__white--bright: rgba(255, 255, 255, 0.6);
-  --color__white--regular: rgba(255, 255, 255, 0.5);
-  --color__white--dim: rgba(255, 255, 255, 0.3);
-  --color__white--dimmer: rgba(255, 255, 255, 0.2);
-  --color__white--dimmest: rgba(255, 255, 255, 0.1);
 
-  /* --color__blue--100: #f3e5f5;
-  --color__blue--200: #e1bee7;
-  --color__blue--300: #ce93d8; */
+  --color__gray--100: #f5f5f5;
+  --color__white--200: #eeeeee;
+  --color__white--300: #e0e0e0;
+  --color__white--400: #bdbdbd;
+  --color__white--600: #757575;
+  --color__white--700: #616161;
+  --color__white--800: #424242;
 
   --color__blue--100: #d1c4e9;
   --color__blue--200: #b39ddb;

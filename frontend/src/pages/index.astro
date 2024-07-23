@@ -110,18 +110,6 @@ import Card from "../components/container/Card.astro"
 		margin: 0 auto;
 	}
 
-	main {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.footnote {
-		margin-top: 0.5em;
-		font-size: 0.8em;
-		font-family: var(--font-family__sans-serif);
-		color: var(--color__white--regular);
-	}
-
 	.petal {
 		width: 25px;
 		position: absolute;
@@ -143,33 +131,22 @@ import Card from "../components/container/Card.astro"
 		animation: blowing 9s 3s linear infinite;
 	}
 
-	article {
-		max-width: 560px;
-		margin: 0 auto;
-		text-align: left;
-	}
-
-	.seperator {
-		border-top: 1px solid var(--color__white--dim);
-		width: 100%;
-		margin: 2em 0;
-	}
-
-	.row-reverse {
-		display: flex;
-		flex-direction: row-reverse;
-		text-align: right;
-		margin-top: 1em;
-	}
-
-	ul {
-		list-style-type: none;
-	}
-
-	li {
-		margin-bottom: 2em;
-		padding-bottom: 2em;
-		border-bottom: 1px solid var(--color__white--dimmer);
+	@keyframes blowing {
+		0% {
+			transform: translate(0,0) rotate(0)
+		}
+		25% {
+			transform: translate(25vw, -10vh) rotate(120deg)
+		}
+		50% {
+			transform: translate(50vw, -12vh) rotate(180deg)
+		}
+		75% {
+			transform: translate(75vw, -17vh) rotate(250deg)
+		}
+		100% {
+			transform: translate(100vw, -25vh) rotate(360deg)
+		}
 	}
 
 	.material-symbols-outlined {
@@ -178,27 +155,4 @@ import Card from "../components/container/Card.astro"
 		top: 5px;
 		margin-right: 0.25em;
 	}
-
-	.subtext {
-		margin-left: 1.5em;
-	}
-
-@keyframes blowing {
-  0% {
-    transform: translate(0,0) rotate(0)
-  }
-  25% {
-    transform: translate(25vw, -10vh) rotate(120deg)
-  }
-  50% {
-    transform: translate(50vw, -12vh) rotate(180deg)
-  }
-  75% {
-    transform: translate(75vw, -17vh) rotate(250deg)
-  }
-  100% {
-    transform: translate(100vw, -25vh) rotate(360deg)
-  }
-}
-
 </style>
