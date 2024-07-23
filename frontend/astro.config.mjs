@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import { Var } from "./src/script/var";
@@ -8,7 +7,6 @@ import { Var } from "./src/script/var";
 export default defineConfig({
   site: Var.app.website.url,
   integrations: [
-    mdx(),
     sitemap(),
     partytown({
       config: {
