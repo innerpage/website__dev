@@ -1,6 +1,11 @@
 @import "reset.css";
 @import "vars.css";
 
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("./IBMPlexSerif-Regular.ttf");
+}
+
 body {
   background: var(--color__site--background);
   font-size: var(--font-size__body);
@@ -51,14 +56,12 @@ li {
 
 .date {
   font-size: 0.8em;
-  font-family: var(--font-family__sans-serif);
   color: var(--color__gray--400);
 }
 
 .footnote {
   margin-top: 0.5em;
   font-size: 0.8em;
-  font-family: var(--font-family__sans-serif);
   color: var(--color__gray--400);
 }
 
