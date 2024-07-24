@@ -4,6 +4,7 @@
 @font-face {
   font-family: "IBM Plex Serif";
   src: url("./IBMPlexSerif-Regular.ttf");
+  font-display: swap;
 }
 
 body {
