@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-85.0312,-598.106)">
+        <g id="Petal-2" serif:id="Petal 2" transform="matrix(0.090883,0,0,0.161954,102.703,608.191)">
+            <rect x="-194.445" y="-62.268" width="550.158" height="308.729" style="fill:none;"/>
+            <g transform="matrix(0.203765,-5.94743,11.4006,0.123001,-15017.9,151.354)">
+                <path d="M13.507,1344.26C13.541,1344.25 13.271,1343.96 13.395,1343.26C14.566,1336.65 23.723,1305.22 57.903,1300.29C57.903,1300.29 61.187,1300.14 61.29,1301.58C61.698,1307.26 50.647,1319.48 41.39,1330.26C30.899,1342.49 19.093,1351.54 13.507,1344.26Z" style="fill:rgb(98,85,135);"/>
+            </g>
+        </g>
+    </g>
+</svg>
