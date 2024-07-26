@@ -23,6 +23,7 @@ h1 {
   font-size: 2.5em;
   line-height: 1.2em;
   font-weight: 700;
+  color: var(--color__gray--200);
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
   font-size: 1.75em;
   line-height: 1.5em;
   font-weight: 700;
+  color: var(--color__gray--200);
 }
 
 article {
