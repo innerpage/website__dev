@@ -1,5 +1,5 @@
 {
-  "name": "InnerPage — Improve your mental health 🌸",
+  "name": "InnerPage — Improve your mental health",
   "description": "InnerPage is a privacy-centric digital journal. Pour out your deepest thoughts and feelings anonymously",
   "type": "module",
   "version": "0.0.1",
@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
-    "@astrojs/partytown": "^2.1.1",
     "@astrojs/sitemap": "^3.1.6",
     "astro": "^3.4.3",
     "typescript": "^5.2.2"
