@@ -1,4 +1,4 @@
-Website: [Innerpage](https://innerpage.org) website.
+Website: [https://innerpage.org](https://innerpage.org)
 
 ## Technologies Used
 
