@@ -1,35 +1,36 @@
-## Clone repo
+# InnerPage Website
 
-✅ `git clone git@github.com-projckt:projckt/starter_website-dev.git dev`<br/>
-✅ `cd dev`
+This repository contains the development codebase for the InnerPage website.
 
-<hr/>
+## Table of Contents
 
-## Edit remote
+- [Technologies Used](#technologies-used)
+- [Clone the Repository](#clone-the-repository)
+- [Install Dependencies](#install-dependencies)
+- [Build and Deployment](#build-and-deployment)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-✅ `git remote set-url origin git@github.com-{username}:{username}/website__dev.git`
+## Technologies Used
 
-<hr/>
+- [Astro](https://astro.build/)
 
-## Edit ./build.sh
+## Installation
 
-✅ Change production repo to `git@github.com-{username}:{username}/website__prod.git`
+- Clone the repository
+  `git clone git@github.com:innerpage/website__dev.git cd website__dev`
 
-<hr/>
+- Install dependencies
+  `./init.sh`
 
-## Install dependencies
+## Build and Deployment
 
-✅ `./init.sh`
+- Build the code
+  `./build.sh`
 
-<hr/>
+- Deploy the `prod` folder in your web server
 
-## Edit ./frontend/package.json
+## Contributing
 
-✅ Change `name`<br/>
-✅ Change `description`
-
-<hr/>
-
-## Edit ./frontend/src/script/var.ts
-
-✅ Change everything
+Feel free to contribute by opening pull requests or reporting issues.
