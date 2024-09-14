@@ -22,13 +22,17 @@ Website: [https://innerpage.org](https://innerpage.org)
 
 <br/>
 
-## Build and Deployment
+## Build
 
 - Build the code <br/>
 
   ```
     ./build.sh
   ```
+
+<br/>
+
+## Deployment
 
 - Deploy the `prod` folder in your web server
 
