@@ -1,6 +1,4 @@
-# InnerPage Website
-
-This repository contains the development codebase for the InnerPage website.
+his repository contains the development codebase for the [Innerpage](https://innerpage.org) website.
 
 ## Technologies Used
 
@@ -9,7 +7,11 @@ This repository contains the development codebase for the InnerPage website.
 ## Installation
 
 - Clone the repository <br/>
-  `git clone git@github.com:innerpage/website__dev.git <br/> cd website__dev`
+
+  ```
+    git clone git@github.com:innerpage/website__dev.git
+    cd website__dev
+  ```
 
 - Install dependencies <br/>
   `./init.sh`
