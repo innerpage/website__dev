@@ -2,31 +2,21 @@
 
 This repository contains the development codebase for the InnerPage website.
 
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Clone the Repository](#clone-the-repository)
-- [Install Dependencies](#install-dependencies)
-- [Build and Deployment](#build-and-deployment)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Technologies Used
 
 - [Astro](https://astro.build/)
 
 ## Installation
 
-- Clone the repository
-  `git clone git@github.com:innerpage/website__dev.git cd website__dev`
+- Clone the repository <br/>
+  `git clone git@github.com:innerpage/website__dev.git <br/> cd website__dev`
 
-- Install dependencies
+- Install dependencies <br/>
   `./init.sh`
 
 ## Build and Deployment
 
-- Build the code
+- Build the code <br/>
   `./build.sh`
 
 - Deploy the `prod` folder in your web server
