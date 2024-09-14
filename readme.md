@@ -14,12 +14,17 @@ his repository contains the development codebase for the [Innerpage](https://inn
   ```
 
 - Install dependencies <br/>
-  `./init.sh`
+  ```
+    ./init.sh
+  ```
 
 ## Build and Deployment
 
 - Build the code <br/>
-  `./build.sh`
+
+  ```
+    ./build.sh
+  ```
 
 - Deploy the `prod` folder in your web server
 
