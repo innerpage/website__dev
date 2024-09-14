@@ -3,6 +3,7 @@ his repository contains the development codebase for the [Innerpage](https://inn
 ## Technologies Used
 
 - [Astro](https://astro.build/)
+<hr/>
 
 ## Installation
 
@@ -17,6 +18,7 @@ his repository contains the development codebase for the [Innerpage](https://inn
   ```
     ./init.sh
   ```
+  <hr/>
 
 ## Build and Deployment
 
@@ -27,6 +29,8 @@ his repository contains the development codebase for the [Innerpage](https://inn
   ```
 
 - Deploy the `prod` folder in your web server
+
+<hr/>
 
 ## Contributing
 
