@@ -11,7 +11,7 @@ Website: [https://innerpage.org](https://innerpage.org)
 - Clone the repository <br/>
 
   ```
-    git clone git@github.com:innerpage/website__dev.git
+    git clone https://github.com/innerpage/website__dev.git
     cd website__dev
   ```
 
