@@ -1,237 +1,420 @@
 ---
-import Site from "../layouts/Site.astro"
-import Section from "../components/container/Section.astro"
-import Link from "../components/elements/Link.astro"
-import { Var } from "../script/var"
-import Card from "../components/container/Card.astro"
-
-
+import Site from '../layouts/Site.astro'
+import Section from '../components/container/Section.astro'
+import Link from '../components/elements/Link.astro'
+import { Var } from '../script/var'
+import Card from '../components/container/Card.astro'
 ---
 
-<Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
-	<div id="petal-container">  
-		<img alt="InnerPage petal" class="petal" src="./newPetal-1.svg"/>
-		<img alt="InnerPage petal" class="petal" src="./newPetal-2.svg"/>
-		<img alt="InnerPage petal" class="petal" src="./newPetal-3.svg"/>
-	</div>
-	<Section>
-		<h1>Improve Your Mental Health with Anonymous, Secure Journaling</h1>
-		<p>InnerPage offers a <strong>free, private, secure digital journal for privacy-conscious individuals</strong>. Safely express your thoughts and emotions to boost mental well-being.</p>
-		<br/>
-		<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="small"><strong>Start Writing</strong></Link>
-	</Section>
-	<Section>
-		<div class="gallery-item">
-			<p>
-				<em>One of the more effective acts of self-care is also, happily, one of the cheapest</em>
-			</p>
-				
-				<Link target="_blank" href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"><strong>What’s All This About Journaling?</strong></Link>
-				<p class="footnote">
-					The New York Times on the benefits of journaling for mental health and self-care
-			
-		</div>
-		<div class="gallery-item">
-			<p>
-					<em>"The process of putting emotions into words seems to unintentionally activate a process of emotion regulation"</em>
-				</p>
-				<Link target="_blank" href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"><strong>Putting feelings into words</strong></Link>
-				<p class="footnote">Edit Lab, King’s College London, highlight the therapeutic power of journaling for mental health</p>
-		</div>
-		<div class="gallery-item">
-			<p>
-					<em>"Study after study showed that writing about traumatic experience had significant effect on mental health, physical health & a variety of other behaviours"</em>
-				</p>
-				<Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4"><strong>The expressive writing method</strong></Link>
-				<p class="footnote">
-					James Pennebaker, on psoitive effects of expressive writing for improving overall health
-				</p>
-		</div>
-		<div class="gallery-item"></div>
-	</Section>
-	<Section>
-		<h2>Benefits of Journaling for Mental Health</h2>
-			<article>
-				<p>Journaling has been proven to improve mental health through various research-backed benefits. Here’s how it helps:</p>
-				<br/><br/>
-				<ul>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>
-							<p><strong>Reduces Stress and Anxiety</strong></p>
-							<p>Journaling allows you to unload overwhelming thoughts, providing relief from daily stresses.</p>
-							<p>By organizing your thoughts, you can better manage anxiety triggers,lower cortisol levels and promote calmness</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/> 
-						<div>
-							<p><strong>Enhances Emotional Regulation</strong></p>
-							<p>Writing down your emotions helps clarify them, making it easier to regulate your mood.</p>
-							<p>This process can lead to a more balanced emotional state, offering clarity in emotional reactions</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/> 
-						<div>
-							<p><strong>Improves Mood and Well-being</strong></p>
-							<p>Regular journaling increases self-reflection, which fosters positive thinking and emotional resilience.</p>
-							<p>It’s been linked to enhanced overall well-being and fewer depressive symptoms</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/> 
-						<div>
-							<p><strong>Facilitates Problem Solving and Cognitive Function</strong></p>
-							<p>By organizing thoughts on paper, journaling sharpens cognitive processes like critical thinking and problem-solving.</p>
-							<p>It helps break down complex issues into manageable solutions.</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/> 
-						<div>
-							<p><strong>Boosts Memory and Immune Function</strong></p>
-							<p>Studies show that expressive writing improves memory retention and enhances immune function by reducing the impact of stress on the body</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/> 
-						<div>
-							<strong>Enhances Self-Awareness and Encourages Mindfulness</strong><br/>
-							Journaling allows you to reflect deeply on your thoughts and behaviors. This practice increases self-awareness and promotes mindfulness, leading to better self-understanding and personal growth
-						</div>
-					</li>
-				</ul>
-			</article>
-	</Section>
-	<Section>
-		<h2>Why Choose InnerPage for Private Journaling?</h2>
-			<article>
-				<p>At InnerPage, we prioritize your privacy and confidentiality. Your thoughts stay truly personal with our secure and anonymous platform.</p>
-				<br/><br/>
-				<ul>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>	
-							<p><strong>100% Anonymous</strong></p>
-							<p>No email or phone number required — create your account with just username and password</p>
-						</div> 
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>	
-							<p><strong>Private Space</strong></p>
-							<p>Innerpage is not a social platform. No likes, comments, or sharing. Your journal is completely private</p>
-						</div> 
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>
-							<p><strong>No Data Collection</strong></p>
-							<p>We never track, analyze, or store your journaling habits</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>
-							<p><strong>Full Data Control</strong></p>
-							<p>Delete your account and entries anytime, without any hassle</p>
-						</div>
-					</li>
-					<li>
-						<img class="check-icon" src="./check.svg" width="24" height="32" alt="green check"/>
-						<div>
-							<p><strong>No Third-Party Sharing</strong></p>
-							<p>Your data is never shared or sold—your thoughts are yours alone</p>
-						</div>
-						
-					</li>
-				</ul>
-			</article>
-	</Section>
-	<Section>
-		<h2>Our Commitment to Open Source</h2>
-		<article>
-			<p><strong>InnerPage is fully open source</strong>, empowering users to freely utilize the codebase for personal, non-commercial, or commercial projects (in accordance with the license terms).</p>
-			<br/>
-			<p>
-				<strong>License:&nbsp;&nbsp;<Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3.0</Link></strong>
-			</p>
-			<div class="seperator"></div>
-			<p>
-				<strong>Source Code:</strong>&nbsp;&nbsp;<Link href="https://github.com/innerpage"><strong>https://github.com/innerpage</strong></Link>
-			</p>
-			<div class="seperator"></div>
-		</article>
-	</Section>
-	<Section>
-		<h2>Contact Us</h2>
-		<article>
-			<p>Kindly reach out to us for any kind of assistance, feature requests or bug reports:</p>
-			<br/>
-			<ul>
-				<li><strong>Email:</strong>&nbsp;&nbsp;<Link href={`mailto:${Var.app.contact.email}`}><strong>{Var.app.contact.email}</strong></Link></li>
-				<li><strong>Twitter:</strong>&nbsp;&nbsp;<Link href={Var.app.contact.social.twitter} target="_blank"><strong>{Var.app.contact.social.twitter}</strong></Link></li>
-			</ul>
-		</article>
-	</Section>
+<Site
+  title={`${Var.app.name} — ${Var.app.tagline}`}
+  description={Var.app.description}
+>
+  <div id="petal-container">
+    <img alt="InnerPage petal" class="petal" src="./newPetal-1.svg" />
+    <img alt="InnerPage petal" class="petal" src="./newPetal-2.svg" />
+    <img alt="InnerPage petal" class="petal" src="./newPetal-3.svg" />
+  </div>
+  <Section>
+    <h1>Improve Your Mental Health with Anonymous, Secure Journaling</h1>
+    <p>
+      InnerPage offers a <strong
+        >free, private, secure digital journal for privacy-conscious individuals</strong
+      >. Safely express your thoughts and emotions to boost mental well-being.
+    </p>
+    <br />
+    <Link
+      href={Var.app.url}
+      variant="button"
+      fill="solid"
+      theme="default"
+      size="small"><strong>Start Writing</strong></Link
+    >
+  </Section>
+  <Section>
+    <div class="gallery-item">
+      <p class="quote">
+        <em
+          >One of the more effective acts of self-care is also, happily, one of
+          the cheapest</em
+        >
+      </p>
+      <Link
+        target="_blank"
+        href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"
+        ><strong>What’s All This About Journaling?</strong></Link
+      >
+      <p class="footnote">
+        The New York Times on the benefits of journaling for mental health and
+        self-care
+      </p>
+      <div class="gallery-item">
+        <p class="quote">
+          <em
+            >The process of putting emotions into words seems to unintentionally
+            activate a process of emotion regulation</em
+          >
+        </p>
+        <Link
+          target="_blank"
+          href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
+          ><strong>Putting feelings into words</strong></Link
+        >
+        <p class="footnote">
+          Edit Lab, King’s College London, highlight the therapeutic power of
+          journaling for mental health
+        </p>
+      </div>
+      <div class="gallery-item">
+        <p class="quote">
+          <em
+            >Study after study showed that writing about traumatic experience
+            had significant effect on mental health, physical health & a variety
+            of other behaviours</em
+          >
+        </p>
+        <Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
+          ><strong>The expressive writing method</strong></Link
+        >
+        <p class="footnote">
+          James Pennebaker, on psoitive effects of expressive writing for
+          improving overall health
+        </p>
+      </div>
+      <div class="gallery-item"></div>
+    </div>
+    <Section>
+      <h2>Benefits of Journaling for Mental Health</h2>
+      <article>
+        <p>
+          Journaling has been proven to improve mental health through various
+          research-backed benefits. Here’s how it helps:
+        </p>
+        <br /><br />
+        <ul>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright"><strong>Reduces Stress and Anxiety</strong></p>
+              <p>
+                Journaling allows you to unload overwhelming thoughts, providing
+                relief from daily stresses.
+              </p>
+              <p>
+                By organizing your thoughts, you can better manage anxiety
+                triggers,lower cortisol levels and promote calmness
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong>Enhances Emotional Regulation</strong>
+              </p>
+              <p>
+                Writing down your emotions helps clarify them, making it easier
+                to regulate your mood.
+              </p>
+              <p>
+                This process can lead to a more balanced emotional state,
+                offering clarity in emotional reactions
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong>Improves Mood and Well-being</strong>
+              </p>
+              <p>
+                Regular journaling increases self-reflection, which fosters
+                positive thinking and emotional resilience.
+              </p>
+              <p>
+                It’s been linked to enhanced overall well-being and fewer
+                depressive symptoms
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong
+                  >Facilitates Problem Solving and Cognitive Function</strong
+                >
+              </p>
+              <p>
+                By organizing thoughts on paper, journaling sharpens cognitive
+                processes like critical thinking and problem-solving.
+              </p>
+              <p>
+                It helps break down complex issues into manageable solutions.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong>Boosts Memory and Immune Function</strong>
+              </p>
+              <p>
+                Studies show that expressive writing improves memory retention
+                and enhances immune function by reducing the impact of stress on
+                the body
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong
+                  >Enhances Self-Awareness and Encourages Mindfulness</strong
+                >
+              </p>
+
+              Journaling allows you to reflect deeply on your thoughts and
+              behaviors. This practice increases self-awareness and promotes
+              mindfulness, leading to better self-understanding and personal
+              growth
+            </div>
+          </li>
+        </ul>
+      </article>
+    </Section>
+    <Section>
+      <h2>Why Choose InnerPage for Private Journaling?</h2>
+      <article>
+        <p>
+          At InnerPage, we prioritize your privacy and confidentiality. Your
+          thoughts stay truly personal with our secure and anonymous platform.
+        </p>
+        <br /><br />
+        <ul>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright"><strong>100% Anonymous</strong></p>
+              <p>
+                No email or phone number required — create your account with
+                just username and password
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright"><strong>Private Space</strong></p>
+              <p>
+                Innerpage is not a social platform. No likes, comments, or
+                sharing. Your journal is completely private
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright"><strong>No Data Collection</strong></p>
+              <p>We never track, analyze, or store your journaling habits</p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright"><strong>Full Data Control</strong></p>
+              <p>Delete your account and entries anytime, without any hassle</p>
+            </div>
+          </li>
+          <li>
+            <img
+              class="check-icon"
+              src="./check.svg"
+              width="24"
+              height="32"
+              alt="green check"
+            />
+            <div>
+              <p class="bright">
+                <strong>No Third-Party Sharing</strong>
+              </p>
+              <p>
+                Your data is never shared or sold—your thoughts are yours alone
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </Section>
+    <Section>
+      <h2>Our Commitment to Open Source</h2>
+      <article>
+        <p>
+          <span class="bright"
+            ><strong>InnerPage is fully open source</strong></span
+          >, empowering users to freely utilize the codebase for personal,
+          non-commercial, or commercial projects (in accordance with the license
+          terms).
+        </p>
+        <br />
+        <p>
+          License:&nbsp;&nbsp;<Link
+            href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+            >GNU GPL v3.0</Link
+          >
+        </p>
+        <div class="seperator"></div>
+        <p>
+          Source Code:&nbsp;&nbsp;<Link href="https://github.com/innerpage"
+            >https://github.com/innerpage</Link
+          >
+        </p>
+        <div class="seperator"></div>
+      </article>
+    </Section>
+    <Section>
+      <h2>Contact Us</h2>
+      <article>
+        <p>
+          Kindly reach out to us for any kind of assistance, feature requests or
+          bug reports:
+        </p>
+        <br />
+        <ul>
+          <li>
+            Email:&nbsp;&nbsp;<Link href={`mailto:${Var.app.contact.email}`}
+              >{Var.app.contact.email}</Link
+            >
+          </li>
+          <li>
+            Twitter:&nbsp;&nbsp;<Link
+              href={Var.app.contact.social.twitter}
+              target="_blank">{Var.app.contact.social.twitter}</Link
+            >
+          </li>
+        </ul>
+      </article>
+    </Section>
+  </Section>
+
+  <style>
+    .check-icon {
+      margin-right: 0.5em;
+    }
+
+    ul li {
+      display: flex;
+    }
+
+    li p {
+      margin-bottom: 0.75em;
+    }
+
+    li p:last-child {
+      margin-bottom: 0;
+    }
+
+    .petal {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+    }
+
+    .petal:nth-child(1) {
+      top: 32vh;
+      left: -10%;
+      animation: blowing 10s 1s linear infinite;
+    }
+    .petal:nth-child(2) {
+      top: 30vh;
+      left: -10%;
+      animation: blowing 8s linear infinite;
+    }
+    .petal:nth-child(3) {
+      top: 40vh;
+      left: -10%;
+      animation: blowing 9s 3s linear infinite;
+    }
+
+    @keyframes blowing {
+      0% {
+        transform: translate(0, 0) rotate(0);
+      }
+      25% {
+        transform: translate(25vw, -10vh) rotate(120deg);
+      }
+      50% {
+        transform: translate(50vw, -12vh) rotate(180deg);
+      }
+      75% {
+        transform: translate(75vw, -17vh) rotate(250deg);
+      }
+      100% {
+        transform: translate(100vw, -25vh) rotate(360deg);
+      }
+    }
+  </style>
 </Site>
-
-<style>
-	.check-icon {
-		margin-right: 0.5em;
-	}
-
-	ul li {
-		display: flex;
-	}
-
-	li p {
-		margin-bottom: 0.75em;
-	}
-
-	li p:last-child {
-		margin-bottom: 0;
-	}
-
-	.petal {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-	}
-	
-	.petal:nth-child(1) {
-		top: 32vh;
-		left: -10%;
-		animation: blowing 10s 1s linear infinite;
-	}
-	.petal:nth-child(2) {
-		top: 30vh;
-		left: -10%;
-		animation: blowing 8s linear infinite;
-	}
-	.petal:nth-child(3) {
-		top: 40vh;
-		left: -10%;
-		animation: blowing 9s 3s linear infinite;
-	}
-
-	@keyframes blowing {
-		0% {
-			transform: translate(0,0) rotate(0)
-		}
-		25% {
-			transform: translate(25vw, -10vh) rotate(120deg)
-		}
-		50% {
-			transform: translate(50vw, -12vh) rotate(180deg)
-		}
-		75% {
-			transform: translate(75vw, -17vh) rotate(250deg)
-		}
-		100% {
-			transform: translate(100vw, -25vh) rotate(360deg)
-		}
-	}
-
-</style>
