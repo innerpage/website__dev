@@ -1,47 +1,49 @@
 ---
-import Site from "../../layouts/Site.astro"
-import Section from "../../components/container/Section.astro"
-import Link from "../../components/elements/Link.astro"
-import { Var } from "../../script/var"
+import Site from '../../layouts/Site.astro'
+import Section from '../../components/container/Section.astro'
+import Link from '../../components/elements/Link.astro'
+import { Var } from '../../script/var'
 ---
 
-<Site title={`${Var.app.name} — ${Var.app.tagline}`} description={Var.app.description}>
-	<Section>
-		<main>
-			<h1>Blog</h1>
-			<article>
-				<ul>
-					<Link href="./2024/july/innerpage-secure-and-private-digital-journal">
-						<li>
-							Welcome to InnerPage — Your Secure & Private Digital Journal
-							<br/><span class="date"> July 2024</span>
-						</li>
-					</Link>
-					<!-- <Link href="/blog">
-						<li>
-							A comparison of secure & private digital journals (2024)
-							<br/><span class="date">03 July 2024</span>
-						</li>
-					</Link>
-					<Link href="/blog">
-						<li>
-							The Benefits of Journaling for Mental Health
-							<br/><span class="date">01 July 2024</span>
-						</li>
-					</Link> -->
-				</ul>
-			</article>
-		</main>
-	</Section>
+<Site
+  title={`${Var.app.name} — ${Var.app.tagline}`}
+  description={Var.app.description}
+>
+  <Section>
+    <main>
+      <h1>Blog</h1>
+      <br />
+      <article>
+        <ul>
+          <li>
+            <Link
+              href="./2024/july/innerpage-secure-and-private-digital-journal"
+            >
+              Welcome to InnerPage — Your Secure & Private Digital Journal
+            </Link>
+            <p class="footnote">20 July 2024</p>
+          </li>
+
+          <li>
+            <Link
+              href="./2024/july/innerpage-secure-and-private-digital-journal"
+            >
+              Welcome to InnerPage — Your Secure & Private Digital Journal
+            </Link>
+            <p class="footnote">20 July 2024</p>
+          </li>
+          <li>
+            <Link
+              href="./2024/july/innerpage-secure-and-private-digital-journal"
+            >
+              Welcome to InnerPage — Your Secure & Private Digital Journal
+            </Link>
+            <p class="footnote">20 July 2024</p>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </Section>
 </Site>
 
-<style>
-
-	li {
-		padding: 1em;
-	}
-
-	li:hover {
-		background: var(--color__gray--900);
-	}
-</style>
+<style></style>

@@ -1,54 +1,85 @@
 ---
-import Site from "../../layouts/Site.astro"
-import Section from "../../components/container/Section.astro"
-import Link from "../../components/elements/Link.astro"
-import { Var } from "../../script/var"
+import Site from '../../layouts/Site.astro'
+import Section from '../../components/container/Section.astro'
+import Link from '../../components/elements/Link.astro'
+import { Var } from '../../script/var'
 
 const title = `Support Us — ${Var.app.name}`
 ---
 
 <Site title={title} description={Var.app.description}>
-	<Section>
-		<article>
-			<h1>Support Us</h1>
-			<p>Help us keep InnerPage afloat. This will help others access the benefits of journaling.</p><br/>
-			<iframe id='kofiframe' src='https://ko-fi.com/innerpage/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:350px;padding:4px;background:#f9f9f9;border-radius: 0.5em;' height='600' title='innerpage'></iframe>
-		</article>
-	</Section>
-	<Section>
-		<article>
-			<h2>Become a Sponsor</h2>
-			<p>
-				Our users are dedicated individuals keen on improving themselves on a daily basis.
-			</p>
-			
-			<p> 
-				If you are a brand working in the mental health space, sponsoring Innerpage is a great way to put yourself in front of a high quality audience.
-			</p>
-			
-			<p>
-				We will showcase your brand's logo under the <strong>Sponsors</strong> section on our landing page. The logo will also be linked to your website.
-			</p>
-			
-			<p>
-				If you wish to become a sponsor, kindly write to us: <Link href={`mailto:${Var.app.contact.email}`}><strong>{Var.app.contact.email}</strong></Link>
-			</p>
-		</article>
-	</Section>
-	<Section>
-		<article>
-			<h2>2024 Roadmap</h2>
-			<p>
-				Your sponsorship or donation helps us expand InnerPage and introduce new features that enhance the journaling experience.
-			</p>
-			
-			<p>In 2024, we plan to use these funds to work on the following:</p>
-		</article>
-	</Section>
+  <Section>
+    <article>
+      <h1>Support Us</h1>
+      <h3>
+        Your support keeps Innerpage alive and helps others experience the
+        benefits of journaling
+      </h3><br />
+      <iframe
+        id="kofiframe"
+        src="https://ko-fi.com/innerpage/?hidefeed=true&widget=true&embed=true&preview=true"
+        style="border:none;width:350px;padding:4px;background:#f9f9f9;border-radius: 0.5em;"
+        height="600"
+        title="innerpage"></iframe>
+    </article>
+  </Section>
+  <Section>
+    <article>
+      <h2>Become a Sponsor</h2>
+      <p>
+        If you’re a brand in the mental health space, sponsoring InnerPage
+        connects you with a dedicated audience focused on self-improvement.
+        We’ll feature your logo on our landing page and link it to your site.
+      </p>
+      <p>
+        We will showcase your brand's logo under the <strong>Sponsors</strong> section
+        on our landing page. The logo will also be linked to your website.
+      </p>
+      <p>
+        If you wish to become a sponsor, kindly write to us: <Link
+          href={`mailto:${Var.app.contact.email}`}
+          ><strong>{Var.app.contact.email}</strong></Link
+        >
+      </p>
+    </article>
+  </Section>
+  <Section>
+    <article>
+      <h2>2024 Roadmap</h2>
+      <p>
+        Your sponsorship or donation helps us expand InnerPage and introduce new
+        features that enhance the journaling experience.
+      </p>
+
+      <p>In 2024, we plan to use these funds to work on the following:</p>
+      <br />
+      <ul>
+        <li>
+          <div>
+            <p class="bright"><strong>Mood Tracking</strong></p>
+            <p>
+              Users will be able to log and track their emotions over time,
+              gaining insights into patterns that can help improve mental health
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p class="bright"><strong>Research Summaries</strong></p>
+            <p>
+              Our blog will feature summarized posts on the latest mental health
+              research, providing users with evidence-based insights to guide
+              their journaling practices
+            </p>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </Section>
 </Site>
 
 <style>
-	p {
-		text-align: left;
-	}
+  p {
+    text-align: left;
+  }
 </style>

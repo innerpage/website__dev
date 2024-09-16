@@ -1,78 +1,86 @@
 ---
 interface Props {
-	href:string;
-    target?:string;
-    variant?:string;
-    fill?:string;
-    theme?:string;
-    size?:string;
+  href: string
+  target?: string
+  variant?: string
+  fill?: string
+  theme?: string
+  size?: string
 }
 
-const { href, target, variant, fill, theme, size } = Astro.props;
+const { href, target, variant, fill, theme, size } = Astro.props
 ---
 
-<a class=`${variant} ${variant}__${fill}--${theme} ${variant}__${size}` href={href} target={target}>
-    <slot></slot>
+<a
+  class=`${variant} ${variant}__${fill}--${theme} ${variant}__${size}`
+  href={href}
+  target={target}
+>
+  <slot />
 </a>
 
 <style>
-    /* Link */
+  /* Link */
 
-    a {
-        text-decoration: none;
-        color: var(--color__deep-purple--200);
-        transition: all 0.25s;
-    }
+  a {
+    text-decoration: none;
+    color: var(--color__deep-purple--200);
+    transition: all 0.25s;
+  }
 
-    a:hover {
-        color: var(--color__deep-purple--100);
-    }
+  a:hover {
+    color: var(--color__deep-purple--100);
+  }
 
-    a:active {
-        color: var(--color__deep-purple--300);
-    }
+  a:active {
+    color: var(--color__deep-purple--300);
+  }
 
+  /* Bright */
+  .bright {
+    color: var(--color__deep-purple--100);
+  }
 
-    /* Button */
-    .button {
-        background: none;
-        border: 0;
-        font-size: 1em;
-        border-radius: var(--border-radius);
-        transition: all 0.25s;
-        padding: calc(var(--padding) / 1.6) calc(var(--padding) / 1.5);
-    }
+  /* Button */
+  .button {
+    background: none;
+    border: 0;
+    font-size: 1em;
+    border-radius: var(--border-radius);
+    transition: all 0.25s;
+    padding: calc(var(--padding) / 1.6) calc(var(--padding) / 1.5);
+  }
 
-    /* Button (Solid) */
-    .button__solid--default {
-        border: 1px solid var(--color__gray--200);
-        background: var(--color__gray--200);
-        color: #121212;
-    }
-    .button__solid--default:hover {
-        background: var(--color__gray--100);
-        color: #121212;
-    }
-    .button__solid--default:active {
-        background: none;
-        color: #121212;
-    }
+  /* Button (Solid) */
+  .button__solid--default {
+    border: 1px solid var(--color__gray--200);
+    background: var(--color__gray--200);
+    color: #121212;
+  }
+  .button__solid--default:hover {
+    background: var(--color__gray--100);
+    color: #121212;
+  }
+  .button__solid--default:active {
+    background: none;
+    color: #121212;
+  }
 
-     /* Button (Outline) */
-    .button__outline--default {
-        border: 1px solid var(--color__gray--400);
-        color: var(--color__gray--300);
-    }
-    .button__outline--default:hover {
-        border: 1px solid var(--color__gray--300);
-    }
-    .button__ghost--default:active {
-        color: var(--color__gray--400);
-        border: 1px solid var(--color__gray--600);
-    }
+  /* Button (Outline) */
+  .button__outline--default {
+    border: 1px solid var(--color__gray--400);
+    color: var(--color__gray--300);
+  }
+  .button__outline--default:hover {
+    border: 1px solid var(--color__gray--300);
+  }
+  .button__ghost--default:active {
+    color: var(--color__gray--400);
+    border: 1px solid var(--color__gray--600);
+  }
 
-     /* Button (Large) */
-    .button__large {
-        font-size: 1.25em;
-    }
+  /* Button (Large) */
+  .button__large {
+    font-size: 1.25em;
+  }
 </style>

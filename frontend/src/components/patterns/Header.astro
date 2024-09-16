@@ -1,26 +1,32 @@
 ---
-import Link from "../elements/Link.astro"
+import Link from '../elements/Link.astro'
 ---
 
-
 <header>
-    <Link href="/">
-      <img width="150" height="29" src="/logotype.svg" alt="Logo of Innerpage, the sceure & private digital library" />
-    </Link>
-    <nav>
-        <Link href="/blog">Blog</Link>
-        &nbsp; &nbsp;&nbsp; &nbsp;
-        <Link href="https://github.com/innerpage" target="_blank">Github</Link>
-        &nbsp; &nbsp;&nbsp; &nbsp;
-        <Link href="/support-us">Support Us</Link>
-    </nav>
+  <Link href="/">
+    <img
+      width="150"
+      height="29"
+      src="/logotype.svg"
+      alt="Logo of Innerpage, the sceure & private digital library"
+    />
+  </Link>
+  <nav>
+    <Link variant="bright" href="/blog">Blog</Link>
+    &nbsp; &nbsp;&nbsp; &nbsp;
+    <Link variant="bright" href="https://github.com/innerpage" target="_blank"
+      >Github</Link
+    >
+    &nbsp; &nbsp;&nbsp; &nbsp;
+    <Link variant="bright" href="/support-us">Support Us</Link>
+  </nav>
 </header>
 <style>
-    header {
-        margin-top: 2em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.8em;
-    }
+  header {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+  }
 </style>
