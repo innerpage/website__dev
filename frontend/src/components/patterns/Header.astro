@@ -7,7 +7,6 @@ import Link from "../elements/Link.astro"
     <Link href="/">
       <img width="150" height="29" src="/logotype.svg" alt="Logo of Innerpage, the sceure & private digital library" />
     </Link>
-    <!-- <a href="https://www.producthunt.com/posts/innerpage-the-anonymous-digital-journal?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-innerpage&#0045;the&#0045;anonymous&#0045;digital&#0045;journal" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=466824&theme=dark" alt="InnerPage&#0044;&#0032;the&#0032;anonymous&#0032;digital&#0032;journal - Your&#0032;safest&#0032;place | Product Hunt" style="width: 180px; height: 54px;" width="250" height="54" /></a> -->
     <nav>
         <Link href="/blog">Blog</Link>
         &nbsp; &nbsp;&nbsp; &nbsp;
@@ -21,6 +20,9 @@ import Link from "../elements/Link.astro"
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--padding) 0;
+        padding:  var(--padding);
+        background: #241f2c;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        font-size: 0.8em;
     }
 </style>

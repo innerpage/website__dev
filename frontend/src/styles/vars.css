@@ -1,5 +1,5 @@
 :root {
-  --font-size__body: 18px;
+  --font-size__body: 20px;
   --font-size__display: 1.5em;
   --font-size__heading: 1.25em;
   --font-size__footnote: 0.8em;
@@ -9,13 +9,12 @@
   --font-family__serif: "IBM Plex Serif", serif;
 
   --padding: 1em;
+
   --border: 1px solid var(--color__gray--800);
   --border__input: 1px solid var(--color__gray--600);
   --border-radius: 0.5em;
-  --line-height: 1.8;
 
   --color__site--background: #121212;
-
   --color__gray--100: #f5f5f5;
   --color__gray--200: #eeeeee;
   --color__gray--300: #e0e0e0;
@@ -23,19 +22,15 @@
   --color__gray--600: #757575;
   --color__gray--700: #616161;
   --color__gray--800: #424242;
+  --color__gray--850: #343434;
   --color__gray--900: #212121;
-
   --color__deep-purple--100: #d1c4e9;
   --color__deep-purple--200: #b39ddb;
   --color__deep-purple--300: #9575cd;
-
   --color__red--100: #ffcdd2;
   --color__red--200: #ef9a9a;
   --color__red--300: #e57373;
-
   --color__green--100: #c8e6c9;
   --color__green--200: #a5d6a7;
   --color__green--300: #81c784;
-
-  --pattern__topbar__height: 50px;
 }

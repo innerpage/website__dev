@@ -1,8 +1,13 @@
 ---
 import { Var } from "../../script/var"
+import Link from "../../components/elements/Link.astro"
+
 ---
 
 <footer>
+    <p><Link href="/terms-of-service">Terms of Service</Link></p>
+    <p><Link href="/privacy-policy">Privacy Policy</Link></p>
+    <br/>
     <p>
       © {new Date().getFullYear()}&nbsp;{Var.app.name}
     </p>
@@ -10,7 +15,6 @@ import { Var } from "../../script/var"
 
 <style>
     footer {
-      text-align: center;
       padding: var(--padding) 0;
       padding-bottom: 4em;
     }
