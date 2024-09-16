@@ -26,6 +26,13 @@ const { title, description } = Astro.props;
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-0.xml" />
+		<link
+			rel="preload"
+			href="./IBMPlexSerif-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
