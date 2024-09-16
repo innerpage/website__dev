@@ -17,7 +17,7 @@ import Card from "../components/container/Card.astro"
 	<Section>
 		<div class="hero">
 			<h1>Improve your mental health</h1>
-			<p>InnerPage is a <strong>private and secure digital journal</strong>. Pour out your deepest thoughts and feelings <strong>anonymously</strong>. Clear your mind, feel better</p>
+			<p>InnerPage is an <strong>Anonymous, Private and Secure Digital Journal</strong> for Privacy Conscious People. Pour your mind out, feel better!</p>
 			<br/>
 			<Link href={Var.app.url} variant="button" fill="solid" theme="default" size="small"><strong>Start Writing</strong></Link>
 		</div>
@@ -93,7 +93,7 @@ import Card from "../components/container/Card.astro"
 		<main>
 			<h2>Why InnerPage?</h2>
 			<article>
-				<p>We believe  your personal reflections should remain truly personal. Our privacy-centric digital journal is designed with your confidentiality as our top priority. Your anonymity isn't just a feature; it's the foundation value of InnerPage. Here is how InnerPage fulfills your secure & private journalling needs:</p>
+				<p>We believe  your personal reflections should remain truly personal. Our privacy-centric digital journal is designed with <strong>your confidentiality as our top priority</strong>. Your anonymity isn't just a feature; it's the foundation value of InnerPage.</p>
 				<br/><br/>
 				<ul>
 					<li class="list-item__icon-label">
@@ -101,6 +101,13 @@ import Card from "../components/container/Card.astro"
 						<div>	
 							<p><strong>100% Anonymous</strong></p>
 							<p>No email or phone number required - just choose a username and password</p>
+						</div> 
+					</li>
+					<li class="list-item__icon-label">
+						<img class="material-symbols-outlined" src="./check.svg" width="24" height="32" alt="green check"/>
+						<div>	
+							<p><strong>Not a Social Platform</strong></p>
+							<p>Your journal is yours only. Nobody can see or comment on your posts</p>
 						</div> 
 					</li>
 					<li class="list-item__icon-label">
@@ -126,6 +133,20 @@ import Card from "../components/container/Card.astro"
 						
 					</li>
 				</ul>
+			</article>
+		</main>
+	</Section>
+	<Section>
+		<main>
+			<h2>Open Source Commitment</h2>
+			<article>
+				<p><strong>Innerpage is open source</strong>. You can use the codebase for any kind of private, non-commercial or commercial use (with appropriate license).</p>
+				<br/>
+				<p>Innerpage is protected by  <Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3.0</Link></p>
+				<br/>
+				<p>
+					<strong>Source Code:</strong>&nbsp;&nbsp;<Link href="https://github.com/innerpage"><strong>https://github.com/innerpage</strong></Link>
+				</p>
 			</article>
 		</main>
 	</Section>

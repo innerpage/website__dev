@@ -24,6 +24,7 @@ h1 {
   line-height: 1.2em;
   font-weight: 700;
   color: var(--color__gray--200);
+  margin: 0.5em 0;
 }
 
 h2 {
