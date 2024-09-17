@@ -13,15 +13,15 @@ import Card from '../components/container/Card.astro'
   description={Var.app.description}
 >
   <div id="petal-container">
-    <img alt="InnerPage petal" class="petal" src="./newPetal-1.svg" />
-    <img alt="InnerPage petal" class="petal" src="./newPetal-2.svg" />
-    <img alt="InnerPage petal" class="petal" src="./newPetal-3.svg" />
+    <img alt="Animated petal" class="petal" src="./newPetal-1.svg" />
+    <img alt="Animated petal" class="petal" src="./newPetal-2.svg" />
+    <img alt="Animated petal" class="petal" src="./newPetal-3.svg" />
   </div>
   <Section>
     <div class="hero">
       <h1>Improve Your Mental Health with Anonymous, Secure Journaling</h1>
       <h3>
-        InnerPage offers a <strong
+        {Var.app.name} offers a <strong
           ><span class="bright">free, private, secure digital journal</span> for
           privacy-conscious individuals</strong
         >. Safely express your thoughts and emotions to boost mental well-being.
@@ -242,10 +242,10 @@ import Card from '../components/container/Card.astro'
     </article>
   </Section>
   <Section>
-    <h2>Why Choose InnerPage for Private Journaling?</h2>
+    <h2>Why Choose {Var.app.name} for Private Journaling?</h2>
     <article>
       <p>
-        At InnerPage, we prioritize your privacy and confidentiality. Your
+        At {Var.app.name}, we prioritize your privacy and confidentiality. Your
         thoughts stay truly personal with our secure and anonymous platform.
       </p>
       <br /><br />
@@ -277,8 +277,8 @@ import Card from '../components/container/Card.astro'
           <div>
             <p class="bright"><strong>Private Space</strong></p>
             <p>
-              Innerpage is not a social platform. No likes, comments, or
-              sharing. Your journal is completely private
+              {Var.app.name} is not a social platform. No likes, comments, or sharing.
+              Your journal is completely private
             </p>
           </div>
         </li>
@@ -333,7 +333,7 @@ import Card from '../components/container/Card.astro'
     <article>
       <p>
         <span class="bright"
-          ><strong>InnerPage is fully open source</strong></span
+          ><strong>{Var.app.name} is fully open source</strong></span
         >, empowering users to freely utilize the codebase for personal,
         non-commercial, or commercial projects (in accordance with the license
         terms).
