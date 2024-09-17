@@ -24,12 +24,8 @@ import { Var } from '../../script/var'
       </p>
       <br />
       <p>
-        <Link href={Var.app.website.url} target="_blank">{Var.app.name}</Link> is
-        developed by <Link href={Var.app.developer.url} target="_blank"
-          >{Var.app.developer.name}</Link
-        >. When you use {Var.app.name} you are agreeing to these latest Terms of
-        Service (“Terms”). Violation of these terms may, result in termination your
-        account.
+        When you use {Var.app.name} you are agreeing to these latest Terms of Service
+        (“Terms”). Violation of these terms may, result in termination your account.
       </p>
       <p>
         We may update these Terms of Service at any time. If we make significant
@@ -75,17 +71,19 @@ import { Var } from '../../script/var'
       <div id="definitions" class="separator"></div>
       <h2>Definitions</h2>
       <p>
-        “We”, “our”, or “us” in any of our policies or terms, refers to {
+        “We”, “Our”, or “Us” in any of our policies or terms, refers to {
           Var.app.name
         }.
       </p>
 
       <p>
-        “You” or “your” refers to the people or organizations that own an
-        account with us. Accounts are owned by the organization detailed during
-        signup, if this is a legal entity. If the organization is
-        unincorporated, the account is owned by the individual who signed up for
-        the account.
+        “You” or “Your” refers to the people or organizations that own an
+        account with us. An account is owned by an organization if it is a legal
+        entity.
+      </p>
+      <p>
+        If the organization is unincorporated, the account is owned by the
+        individual who signed up for the account.
       </p>
       <div id="account-terms" class="separator"></div>
       <h2>Account Terms</h2>
@@ -103,41 +101,27 @@ import { Var } from '../../script/var'
             &mdash; You may not use {Var.app.name} for any purpose outlined below:
           </p>
           <ul class="bullet-list left-margin">
-            <li><p>Use {Var.app.name} to break any laws or regulations.</p></li>
+            <li>Use {Var.app.name} to break any laws or regulations.</li>
+            <li>Gather or use information from accounts that aren’t yours.</li>
             <li>
-              <p>Gather or use information from accounts that aren’t yours.</p>
+              Attempt to deceive Us or other users by making false reports or
+              pretending to be someone else.
             </li>
+            <li>
+              Bypass or interfere with the security features of {Var.app.name}.
+            </li>
+            <li>
+              Overload or disrupt any configuration or operations of
+              {Var.app.name}.
+            </li>
+            <li>
+              Send or try to send viruses or any malware, or add tracking tools
+              like web bugs and cookies to {Var.app.name}.
+            </li>
+            <li>Harass or threaten other users, or anyone from our team.</li>
             <li>
               <p>
-                Attempt to deceive us or other users by making false reports or
-                pretending to be someone else.
-              </p>
-            </li>
-            <li>
-              <p>
-                Bypass or interfere with the security features of {
-                  Var.app.name
-                }.
-              </p>
-            </li>
-            <li>
-              <p>
-                Overload or disrupt any configuration or operations of
-                {Var.app.name}.
-              </p>
-            </li>
-            <li>
-              <p>
-                Send or try to send viruses or any malware, or add tracking
-                tools like web bugs and cookies to {Var.app.name}.
-              </p>
-            </li>
-            <li>
-              <p>Harass or threaten other users, or anyone from our team.</p>
-            </li>
-            <li>
-              <p>
-                In addition to the above, we reserve the right to suspend or
+                In addition to the above, We reserve the right to suspend or
                 cancel any account, at any time, without notice.
               </p>
             </li>
@@ -159,10 +143,11 @@ import { Var } from '../../script/var'
       <div id="payments-refunds-plan-changes" class="separator"></div>
       <h2>Payments & Refunds</h2>
       <p>
-        <span><strong>{Var.app.name} is free to use</strong></span>. However you
-        can <Link href="./support-us">support us via donations </Link>. Such
-        acts of charity is considered conscious and voluntary, hence
-        non-refundable.
+        <span><strong>{Var.app.name} is free to use</strong></span>. However,
+        you can <Link href="./support-us"
+          >support us via financial contribution
+        </Link>. Such acts of charity is considered conscious and voluntary,
+        hence non-refundable.
       </p>
       <div id="cancellation-and-termination" class="separator"></div>
       <h2>Account Deletion</h2>
@@ -193,12 +178,20 @@ import { Var } from '../../script/var'
           <p>
             We reserve the right to suspend or terminate your account and refuse
             any and all current use of {Var.app.name} for any reason at any time.
-            Suspension means you will not be able to access the account or any content
-            in the account. Termination will furthermore result in the deletion of
-            your account or your access to your account, and the deletion of all
-            content in your account. We also reserve the right to refuse the use
-            of {Var.app.name} to anyone for any reason at any time, including, but
-            not limited to violations of our <Link href="#user-restriction-list"
+          </p>
+          <p>
+            Suspension means you will not be able to access the account or any
+            content in the account.
+          </p>
+          <p>
+            Termination will furthermore result in the deletion of your account
+            or your access to your account, and the deletion of all content in
+            your account.
+          </p>
+          <p>
+            We also reserve the right to refuse the use of {Var.app.name} to anyone
+            for any reason at any time, including, but not limited to violations
+            of our <Link href="#user-restriction-list"
               >User Restrictions Policy</Link
             >.
           </p>
@@ -242,9 +235,12 @@ import { Var } from '../../script/var'
             We reserve the right to temporarily disable your account if your
             usage significantly exceeds the average usage of other users of {
               Var.app.name
-            }. We’ll reach out to the account owner before taking any action
-            except in rare cases where the level of use may negatively impact
-            the performance of the {Var.app.name} for other customers.
+            }.
+          </p>
+          <p>
+            We’ll reach out to the account owner before taking any action except
+            in rare cases where the level of use may negatively impact the
+            performance of the {Var.app.name} for other customers.
           </p>
         </li>
         <li>
@@ -292,8 +288,11 @@ import { Var } from '../../script/var'
             purposes. Please email us at <Link
               href={`mailto:${Var.app.contact.email}`}
               target="_blank">{Var.app.contact.email}</Link
-            > for permission. We reserve the right to rescind any permissions if
-            you violate these Terms.
+            > for permission.
+          </p>
+          <p>
+            We reserve the right to rescind any permissions if you violate these
+            Terms.
           </p>
         </li>
         <li>
@@ -318,11 +317,19 @@ import { Var } from '../../script/var'
           <p>
             Abuse or excessively frequent requests to {Var.app.name} via the API
             may result in the temporary or permanent suspension of your account’s
-            access. {Var.app.name}, in its sole discretion, will determine abuse
-            or excessive usage of the API. If we need to suspend your account’s
-            access, we will attempt to warn the account owner first. If your API
-            usage could or has caused downtime, we may cut off access without
-            prior notice.
+            access.
+          </p>
+          <p>
+            {Var.app.name}, in its sole discretion, will determine abuse or
+            excessive usage of the API.
+          </p>
+          <p>
+            If we need to suspend your account’s access, we will attempt to warn
+            the account owner first.
+          </p>
+          <p>
+            If your API usage could or has caused downtime, we may cut off
+            access without prior notice.
           </p>
         </li>
       </ol>
@@ -332,6 +339,8 @@ import { Var } from '../../script/var'
         You agree that {Var.app.name} is not liable to you or to any third party
         for damages of any kind that result from the use of {Var.app.name}, in
         ability to access data, or unauthorized access of your data or account.
+      </p>
+      <p>
         {Var.app.name} is also not liable for damages of any kind related to actions
         of any third party that uses Our platform, or any other consequences related
         to the Terms or Services.
