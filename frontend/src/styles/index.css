@@ -83,7 +83,7 @@ p {
 
 .footnote {
   font-size: 0.8em;
-  color: var(--color__gray--600);
+  color: var(--color__gray--400);
   line-height: 1.5;
 }
 
