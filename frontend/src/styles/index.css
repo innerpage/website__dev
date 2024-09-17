@@ -54,10 +54,23 @@ ul {
   list-style-type: none;
 }
 
-li {
+.separator-list li {
   margin-bottom: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid var(--color__gray--800);
+}
+
+.bullet-list {
+  list-style-type: circle;
+}
+
+.left-margin {
+  margin-left: 1em;
+}
+
+.separator {
+  margin: 2em 0;
+  border-bottom: 1px solid var(--color__gray--700);
 }
 
 p {
@@ -69,8 +82,8 @@ p {
 }
 
 .footnote {
-  font-size: 0.9em;
-  color: var(--color__gray--400);
+  font-size: 0.8em;
+  color: var(--color__gray--600);
   line-height: 1.5;
 }
 

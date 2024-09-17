@@ -112,7 +112,7 @@ import Card from '../components/container/Card.astro'
         research-backed benefits. Here’s how it helps:
       </p>
       <br /><br />
-      <ul>
+      <ul class="separator-list">
         <li>
           <img
             class="check-icon"
@@ -249,7 +249,7 @@ import Card from '../components/container/Card.astro'
         thoughts stay truly personal with our secure and anonymous platform.
       </p>
       <br /><br />
-      <ul>
+      <ul class="separator-list">
         <li>
           <img
             class="check-icon"
@@ -339,18 +339,19 @@ import Card from '../components/container/Card.astro'
         terms).
       </p>
       <br />
-      <p>
-        License:&nbsp;&nbsp;<Link
-          href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3.0</Link
-        >
-      </p>
-      <div class="seperator"></div>
-      <p>
-        Source Code:&nbsp;&nbsp;<Link href="https://github.com/innerpage"
-          >https://github.com/innerpage</Link
-        >
-      </p>
-      <div class="seperator"></div>
+      <ul class="separator-list">
+        <li>
+          License:&nbsp;&nbsp;<Link
+            href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+            >GNU GPL v3.0</Link
+          >
+        </li>
+        <li>
+          Source Code:&nbsp;&nbsp;<Link href="https://github.com/innerpage"
+            >https://github.com/innerpage</Link
+          >
+        </li>
+      </ul>
     </article>
   </Section>
   <Section>
@@ -361,7 +362,7 @@ import Card from '../components/container/Card.astro'
         bug reports:
       </p>
       <br />
-      <ul>
+      <ul class="separator-list">
         <li>
           Email:&nbsp;&nbsp;<Link href={`mailto:${Var.app.contact.email}`}
             >{Var.app.contact.email}</Link
