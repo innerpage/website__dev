@@ -2,8 +2,8 @@ export const Var = {
   app: {
     name: 'InnerPage',
     description:
-      'Anonymous, Private and Secure Digital Journal for Privacy Conscious People',
-    tagline: 'Improve Your Mental Health',
+      'Anonymous, Private and Free Digital Journal for Privacy Conscious People',
+    tagline: 'Improve Your Mental Health with Anonymous, Private Journaling',
     contact: {
       email: 'innerpage.journal@gmail.com',
       social: {
