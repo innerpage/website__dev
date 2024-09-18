@@ -6,9 +6,18 @@ import { Var } from '../../script/var'
 <header>
   <Link href="/">
     <img
+      class="logotype"
       width="150"
       height="29"
       src="/logotype.svg"
+      alt={`Logo of ${Var.app.name}, the sceure & private digital library`}
+    />
+
+    <img
+      class="logomark"
+      width="29"
+      height="29"
+      src="/logomark.svg"
       alt={`Logo of ${Var.app.name}, the sceure & private digital library`}
     />
   </Link>
@@ -31,5 +40,23 @@ import { Var } from '../../script/var'
     font-size: 0.8em;
     border-bottom: var(--border);
     padding-bottom: var(--padding);
+  }
+
+  .logotype {
+    display: block;
+  }
+
+  .logomark {
+    display: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logotype {
+      display: none;
+    }
+
+    .logomark {
+      display: block;
+    }
   }
 </style>

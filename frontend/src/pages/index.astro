@@ -22,8 +22,9 @@ import Card from '../components/container/Card.astro'
       <h1>Improve Your Mental Health with Anonymous, Private Journaling</h1>
       <h3>
         {Var.app.name} is a <strong
-          ><span class="bright">free, private, anonymous digital journal</span> for
-          privacy-conscious individuals</strong
+          ><span class="bright"
+            >private, anonymous and free digital journal</span
+          > for privacy conscious individuals</strong
         >. Safely express your thoughts and emotions to boost mental well-being.
       </h3>
     </div>
@@ -437,6 +438,12 @@ import Card from '../components/container/Card.astro'
     }
     100% {
       transform: translate(100vw, -25vh) rotate(360deg);
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .hero {
+      width: 100%;
     }
   }
 </style>
