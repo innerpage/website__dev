@@ -3,12 +3,11 @@ import Site from '../../layouts/Site.astro'
 import Section from '../../components/container/Section.astro'
 import Link from '../../components/elements/Link.astro'
 import { Var } from '../../script/var'
+
+const title = `Terms of Service — ${Var.app.name}`
 ---
 
-<Site
-  title={`${Var.app.name} — ${Var.app.tagline}`}
-  description={Var.app.description}
->
+<Site title={title} description={Var.app.description}>
   <Section>
     <article>
       <h1>Terms of Service</h1>
@@ -354,5 +353,3 @@ import { Var } from '../../script/var'
     </article>
   </Section>
 </Site>
-
-<style></style>
