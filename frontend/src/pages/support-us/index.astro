@@ -4,10 +4,11 @@ import Section from '../../components/container/Section.astro'
 import Link from '../../components/elements/Link.astro'
 import { Var } from '../../script/var'
 
-const title = `Support Us — ${Var.app.name}`
+const title = `Support Us | ${Var.app.name} – ${Var.app.tagline}`
+const description = `Support ${Var.app.name} and help us expand our private, anonymous, open source and free journaling platform. Your contributions allow us to grow, introduce new features, and provide more people with the benefits of private journaling`
 ---
 
-<Site title={title} description={Var.app.description}>
+<Site title={title} description={description}>
   <Section>
     <article>
       <h1>Support Us</h1>

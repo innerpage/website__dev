@@ -3,12 +3,12 @@ import Site from '../../layouts/Site.astro'
 import Section from '../../components/container/Section.astro'
 import Link from '../../components/elements/Link.astro'
 import { Var } from '../../script/var'
+
+const title = `Privacy Policy | ${Var.app.name} – ${Var.app.tagline}`
+const description = `Discover how ${Var.app.name} ensures your privacy with private, anonymous, open source and free journaling. Our policy explains how we protect your data and maintain confidentiality without tracking or sharing information`
 ---
 
-<Site
-  title={`${Var.app.name} — ${Var.app.tagline}`}
-  description={Var.app.description}
->
+<Site title={title} description={description}>
   <Section>
     <article>
       <h1>Privacy Policy</h1>

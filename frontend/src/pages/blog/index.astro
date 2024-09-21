@@ -2,12 +2,12 @@
 import Site from '../../layouts/Site.astro'
 import Section from '../../components/container/Section.astro'
 import { Var } from '../../script/var'
+
+const title = `Blog | ${Var.app.name} – ${Var.app.tagline}`
+const description = `Discover mental health tips, journaling techniques, and research insights on the ${Var.app.name} Blog. Learn how secure journaling can enhance your emotional well-being and mindfulness`
 ---
 
-<Site
-  title={`${Var.app.name} — ${Var.app.tagline}`}
-  description={Var.app.description}
->
+<Site title={title} description={description}>
   <Section>
     <main>
       <h1>Blog</h1>

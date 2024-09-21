@@ -2,15 +2,13 @@
 import Site from '../layouts/Site.astro'
 import Section from '../components/container/Section.astro'
 import Link from '../components/elements/Link.astro'
-import Gallery from '../components/container/Gallery.astro'
-import GalleryItem from '../components/container/GalleryItem.astro'
 import { Var } from '../script/var'
+
+const title = `${Var.app.name} — ${Var.app.tagline}`
+const description = Var.app.description
 ---
 
-<Site
-  title={`${Var.app.name} — ${Var.app.tagline}`}
-  description={Var.app.description}
->
+<Site title={title} description={description}>
   <div id="petal-container">
     <img alt="Animated petal" class="petal" src="./newPetal-1.svg" />
     <img alt="Animated petal" class="petal" src="./newPetal-2.svg" />
@@ -33,76 +31,52 @@ import { Var } from '../script/var'
     >
   </Section>
   <Section>
-    <Gallery>
-      <GalleryItem>
-        <p class="quote">
-          <em
-            >One of the more effective acts of self-care is also, happily, one
-            of the cheapest</em
+    <article>
+      <ul class="separator-list">
+        <li>
+          <p class="quote bright">
+            <em
+              >One of the more effective acts of self-care is also, happily, one
+              of the cheapest</em
+            >
+          </p>
+          <Link
+            target="_blank"
+            href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"
+            ><strong>What’s All This About Journaling?</strong></Link
           >
-        </p>
-        <Link
-          target="_blank"
-          href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"
-          ><strong>What’s All This About Journaling?</strong></Link
-        >
-        <p class="footnote">
-          <span class="bright">The New York Times</span> on the benefits of journaling
-          for mental health and self-care
-        </p>
-      </GalleryItem>
-      <GalleryItem>
-        <p class="quote">
-          <em
-            >The process of putting emotions into words seems to unintentionally
-            activate a process of emotion regulation</em
+          <p class="footnote">The New York Times</p>
+        </li>
+        <li>
+          <p class="quote bright">
+            <em
+              >The process of putting emotions into words seems to
+              unintentionally activate a process of emotion regulation</em
+            >
+          </p>
+          <Link
+            target="_blank"
+            href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
+            ><strong>Putting feelings into words</strong></Link
           >
-        </p>
-        <Link
-          target="_blank"
-          href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
-          ><strong>Putting feelings into words</strong></Link
-        >
-        <p class="footnote">
-          <span class="bright">Edit Lab, King’s College London</span>, highlight
-          the therapeutic power of journaling for mental health
-        </p>
-      </GalleryItem>
-      <GalleryItem>
-        <p class="quote">
-          <em
-            >Writing about traumatic experience had significant effect on mental
-            health, physical health & a variety of other behaviours</em
+          <p class="footnote">Edit Lab, King’s College London</p>
+        </li>
+        <li>
+          <p class="quote bright">
+            <em
+              >Writing about traumatic experience had significant effect on
+              mental health, physical health & a variety of other behaviours</em
+            >
+          </p>
+          <Link
+            target="_blank"
+            href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
+            ><strong>The expressive writing method</strong></Link
           >
-        </p>
-        <Link target="_blank" href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
-          ><strong>The expressive writing method</strong></Link
-        >
-        <p class="footnote">
-          <span class="bright">James Pennebaker</span>, on positive effects of
-          expressive writing for improving overall health
-        </p>
-      </GalleryItem>
-      <GalleryItem>
-        <p class="quote">
-          <em
-            >Writing in a journal can be as effective as cognitive-behavioral
-            therapy when it comes to reducing the risk of depression in young
-            adults</em
-          >
-        </p>
-        <Link
-          target="_blank"
-          href="https://www.reflection.app/blog/benefits-of-journaling"
-          ><strong
-            >Top Evidence-Based Benefits of Journaling for Mental Health</strong
-          ></Link
-        >
-        <p class="footnote">
-          Eric Stice, Emily Burton, Sarah Kate Bearman, Paul Rohde
-        </p>
-      </GalleryItem>
-    </Gallery>
+          <p class="footnote">James Pennebaker</p>
+        </li>
+      </ul>
+    </article>
   </Section>
   <Section>
     <h2>Benefits of Journaling for Mental Health</h2>
@@ -112,7 +86,7 @@ import { Var } from '../script/var'
         research-backed benefits. Here’s how it helps:
       </h3>
       <br />
-      <ul class="separator-list">
+      <ul class="separator-list flex-list-items">
         <li>
           <img
             class="check-icon"
@@ -249,7 +223,7 @@ import { Var } from '../script/var'
         thoughts stay truly personal on our private and anonymous platform
       </h3>
       <br />
-      <ul class="separator-list">
+      <ul class="separator-list flex-list-items">
         <li>
           <img
             class="check-icon"
@@ -386,7 +360,7 @@ import { Var } from '../script/var'
     margin-right: 0.5em;
   }
 
-  ul li {
+  .flex-list-items li {
     display: flex;
   }
 
