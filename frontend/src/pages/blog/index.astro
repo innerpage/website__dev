@@ -1,6 +1,8 @@
 ---
 import Site from '../../layouts/Site.astro'
 import Section from '../../components/container/Section.astro'
+import Link from '../../components/elements/Link.astro'
+
 import { Var } from '../../script/var'
 
 const title = `Blog | ${Var.app.name} – ${Var.app.tagline}`
@@ -9,11 +11,20 @@ const description = `Discover mental health tips, journaling techniques, and res
 
 <Site title={title} description={description}>
   <Section>
-    <main>
+    <article>
       <h1>Blog</h1>
       <br />
-      <article>Coming soon. Stay tuned!</article>
-    </main>
+      <ul>
+        <li>
+          <Link
+            href="./blog/innerpage-ultimate-anonymous-journal-and-private-diary"
+            >InnerPage: The Ultimate Anonymous Journal and Private Diary for
+            Mental Well-being</Link
+          >
+          <p class="footnote">04 October 2024</p>
+        </li>
+      </ul>
+    </article>
   </Section>
 </Site>
 
