@@ -2,6 +2,9 @@
 import Site from '../../../layouts/Site.astro'
 import Section from '../../../components/container/Section.astro'
 import Link from '../../../components/elements/Link.astro'
+import BlogHeader from '../../../components/patterns/blog/BlogHeader.astro'
+import BlogScrollTop from '../../../components/patterns/blog/BlogScrollTop.astro'
+
 import { Var } from '../../../script/var'
 
 const title = `InnerPage: The Ultimate Anonymous Journal and Private Diary for Mental Well-being | ${Var.app.name} – ${Var.app.tagline}`
@@ -11,19 +14,32 @@ const description = `Discover mental health tips, journaling techniques, and res
 <Site title={title} description={description}>
   <Section>
     <article class="blog">
-      <h1>
-        InnerPage: The Ultimate Anonymous Journal and Private Diary for Mental
-        Well-being
-      </h1>
-      <br />
+      <BlogHeader
+        title="InnerPage: The Ultimate Anonymous Journal and Private Diary for Mental Well-being"
+        date="04 October 2024"
+        action="compiled"
+        authorName={Var.blog.author.tuhin.name}
+        authorUrl={Var.blog.author.tuhin.url}
+      />
       <p>
         Journaling has long been recognized as a powerful tool for self-care,
         self-reflection, and mental well-being.
       </p>
       <p>
-        However, despite its clear benefits, concerns about privacy and
-        vulnerability often prevent people from fully embracing this
-        transformative practice.
+        However, despite its
+        <Link
+          href="https://positivepsychology.com/benefits-of-journaling/"
+          target="_blank"
+        >
+          clear benefits
+        </Link>, concerns about privacy and vulnerability often
+        <Link
+          href="https://www.reddit.com/r/Journaling/comments/flyhoh/looking_for_anonymous_online_journal/"
+          target="_blank"
+        >
+          prevent people
+        </Link>
+        from fully embracing this transformative practice.
       </p>
       <p>
         In today's digital age, where personal information seems to be
@@ -65,7 +81,7 @@ const description = `Discover mental health tips, journaling techniques, and res
           </Link>
         </li>
         <li>
-          <Link href="#introducing-innerpage">Introducing InnerPage</Link>
+          <Link href="#say-hello-to-innerpage">Say Hello to InnerPage</Link>
         </li>
         <li>
           <Link href="#the-benefits-of-using-innerpage"
@@ -88,24 +104,21 @@ const description = `Discover mental health tips, journaling techniques, and res
           >
         </li>
         <li>
-          <Link href="#frequently-asked-questions"
-            >Frequently Asked Questions</Link
-          >
+          <Link href="#frequently-asked-questions">
+            Frequently Asked Questions
+          </Link>
         </li>
         <li>
-          <Link href="#frequently-asked-questions">
+          <Link href="#donations-and-sponsorship">
             Donations & Sponsorship
           </Link>
         </li>
         <li>
           <Link href="#conclusion">Conclusion</Link>
         </li>
-        <li>
-          <Link href="#references">References</Link>
-        </li>
       </ul>
-      <div class="separator"></div>
-      <h2 id="the-benefits-of-journaling">
+      <div id="the-benefits-of-journaling" class="separator"></div>
+      <h2>
         The Benefits of Journaling: A Gateway to Good Mental and Physical Health
       </h2>
       <p>
@@ -120,10 +133,8 @@ const description = `Discover mental health tips, journaling techniques, and res
       </p>
       <p>
         From reducing anxiety, depression to enhancing self-awareness, the act
-        of writing down one's thoughts holds transformative potential.
-      </p>
-      <p>
-        Broadly speaking, the benefits of journaling can be listed as follows:
+        of writing down one's thoughts holds transformative potential. The
+        benefits of journaling can be listed as follows:
       </p>
       <br />
       <ul class="bullet-list--disc left-margin">
@@ -267,7 +278,11 @@ const description = `Discover mental health tips, journaling techniques, and res
         It is like a personal private diary with a lock, except it is digital
         and the lock is your anonymity.
       </p>
-      <div class="separator"></div>
+      <div
+        id="the-science-behind-journaling-and-mental-health"
+        class="separator"
+      >
+      </div>
       <h2>The Science Behind Journaling & Mental Health</h2>
       <p>
         The benefits of journaling are not just anecdotal; they're backed by
@@ -333,8 +348,12 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
-      <h2>Why Privacy and Anonymity Are Crucial for Journaling</h2>
+      <div
+        id="why-privacy-and-anonymity-are-crucial-for-journaling"
+        class="separator"
+      >
+      </div>
+      <h2>Why Privacy & Anonymity Are Crucial for Journaling</h2>
       <p>
         Despite the numerous benefits of journaling, many people hesitate to put
         pen to paper or fingers to keyboard due to privacy concerns.
@@ -430,9 +449,9 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div id="say-hello-to-innerpage" class="separator"></div>
       <h2>
-        Introducing InnerPage: Your Anonymous, Private Journaling Companion
+        Say Hello to InnerPage: Your Anonymous, Private Journaling Companion
       </h2>
       <p>
         InnerPage is designed to eliminate the barriers that prevent people from
@@ -626,7 +645,7 @@ const description = `Discover mental health tips, journaling techniques, and res
         remains true to its core mission of making private, anonymous journaling
         accessible to all.
       </p>
-      <div class="separator"></div>
+      <div id="the-benefits-of-using-innerpage" class="separator"></div>
       <h2>
         The Benefits of Using InnerPage: A Tool for Mental Health and Personal
         Growth
@@ -737,7 +756,11 @@ const description = `Discover mental health tips, journaling techniques, and res
           </li>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div
+        id="how-innerpage-enhances-your-journaling-experience"
+        class="separator"
+      >
+      </div>
       <h2>How InnerPage Enhances Your Journaling Experience</h2>
       <p>
         InnerPage goes beyond simply providing a digital space for writing. The
@@ -778,7 +801,7 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div id="getting-started-with-innerpage" class="separator"></div>
       <h2>Getting Started with InnerPage: A Step-by-Step Guide</h2>
       <p>
         Ready to start your journaling journey with InnerPage? Here’s a simple
@@ -820,7 +843,7 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div id="tips-for-effective-journaling" class="separator"></div>
       <h2>Tips for Effective Journaling</h2>
       <p>
         To make the most of your journaling experience, consider these
@@ -872,7 +895,7 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div id="frequently-asked-questions" class="separator"></div>
       <h2>Frequently Asked Questions</h2>
       <p>
         To address common concerns and queries, here are answers to some
@@ -927,7 +950,7 @@ const description = `Discover mental health tips, journaling techniques, and res
           </p>
         </li>
       </ul>
-      <div class="separator"></div>
+      <div id="donations-and-sponsorship" class="separator"></div>
       <h2>Donations & Sponsorship</h2>
       <p>
         While there are no mandatory fees, InnerPage offers several ways for
@@ -974,7 +997,7 @@ const description = `Discover mental health tips, journaling techniques, and res
         sustainable platform that benefits all users.
       </p>
       <p>Support InnerPage</p>
-      <div class="separator"></div>
+      <div id="conclusion" class="separator"></div>
       <h2>Conclusion: Embrace the Power of Private Journaling</h2>
       <p>
         InnerPage offers a secure, anonymous platform for journaling, removing
@@ -999,34 +1022,7 @@ const description = `Discover mental health tips, journaling techniques, and res
         Don't let privacy concerns hold you back from experiencing the
         transformative power of journaling. With InnerPage, you have.
       </p>
-      <div class="separator"></div>
-      <h2>References</h2>
-      <!-- 
-      <ul class="bullet-list--disc left-margin">
-        <li>
-          PositivePsychology.com. "Benefits of Journaling for Mental Health."
-        </li>
-        <li>
-         American Psychological Association. "Writing to Heal."
-        </li>
-        <li>
-          Baikie, K. A., & Wilhelm, K. (2005). "Emotional and physical health
-            benefits of expressive writing." Advances in Psychiatric Treatment,
-            11(5), 338-346.
-        </li>
-        <li>
-          "Expressive Writing and Stress Reduction." Journal of Advanced
-            Nursing.
-        </li>
-        <li>
-          "Journaling and Emotional Processing." Journal of Traumatic Stress.
-        </li>
-        <li>
-          "Writing and Immune Function." Psychosomatic Medicine.
-        </li>
-      </ul> 
-      -->
-      <p>Coming Soon</p>
+      <BlogScrollTop />
     </article>
   </Section>
 </Site>

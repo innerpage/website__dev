@@ -19,4 +19,12 @@ export const Var = {
       url: 'https://www.linkedin.com/in/xtbhyn/',
     },
   },
+  blog: {
+    author: {
+      tuhin: {
+        name: 'Tuhin Bhuyan',
+        url: 'https://www.linkedin.com/in/xtbhyn/',
+      },
+    },
+  },
 }

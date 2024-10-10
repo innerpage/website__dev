@@ -1,0 +1,31 @@
+---
+import Link from '../../../components/elements/Link.astro'
+
+interface Props {
+  title: string
+  date: string
+  action: string
+  authorName: string
+  authorUrl: string
+}
+
+const { title, date, action, authorName, authorUrl } = Astro.props
+---
+
+<header>
+  <h1>
+    {title}
+  </h1>
+  <p class="footnote">
+    {date}, {action} by
+    <Link href={authorUrl} target="_blank">
+      {authorName}
+    </Link>
+  </p>
+</header>
+
+<style>
+  header {
+    margin-bottom: 2em;
+  }
+</style>
