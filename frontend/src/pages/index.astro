@@ -21,69 +21,70 @@ const description = Var.app.description
         {Var.app.name} is a free and anonymous journal for privacy conscious people
       </h2>
     </div>
-    <br />
+
     <Link
       href={Var.app.url}
       variant="button"
       fill="solid"
       theme="default"
-      size="small"><strong>Start Writing</strong></Link
+      size="small"><strong>Start Journaling</strong></Link
     >
   </Section>
   <Section>
     <article>
       <ul class="separator-list">
         <li>
-          <p class="quote bright">
-            <em
-              >One of the more effective acts of self-care is also, happily, one
-              of the cheapest</em
-            >
-          </p>
+          <h2 class="quote">
+            One of the more effective acts of self-care is also, happily, one of
+            the cheapest
+          </h2>
           <Link
             target="_blank"
             href="https://www.nytimes.com/2018/10/25/style/journaling-benefits.html"
-            ><strong>What’s All This About Journaling?</strong></Link
           >
+            <strong>What’s All This About Journaling?</strong>
+          </Link>
           <p class="footnote">The New York Times</p>
         </li>
         <li>
-          <p class="quote bright">
-            <em
-              >The process of putting emotions into words seems to
-              unintentionally activate a process of emotion regulation</em
+          <h2 class="quote">
+            The process of putting emotions into words seems to unintentionally
+            activate a process of emotion regulation
+          </h2>
+          <p class="footnote">
+            <Link
+              target="_blank"
+              href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
             >
+              <strong>Putting feelings into words</strong>
+            </Link><br />Edit Lab, King’s College London
           </p>
-          <Link
-            target="_blank"
-            href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
-            ><strong>Putting feelings into words</strong></Link
-          >
-          <p class="footnote">Edit Lab, King’s College London</p>
         </li>
         <li>
-          <p class="quote bright">
-            <em
-              >Writing about traumatic experience had significant effect on
-              mental health, physical health & a variety of other behaviours</em
-            >
+          <h2 class="quote">
+            Writing about traumatic experience had significant effect on mental
+            health, physical health & a variety of other behaviours
+          </h2>
+
+          <p class="footnote">
+            <Link
+              target="_blank"
+              href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
+              ><strong>The expressive writing method</strong></Link
+            ><br />
+            James Pennebaker
           </p>
-          <Link
-            target="_blank"
-            href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
-            ><strong>The expressive writing method</strong></Link
-          >
-          <p class="footnote">James Pennebaker</p>
         </li>
       </ul>
     </article>
   </Section>
   <Section>
-    <h2>Benefits of Journaling for Mental Health</h2>
+    <h2>Benefits of Journaling</h2>
     <article>
       <h3>
-        Journaling has been proven to improve mental health through various
-        research-backed benefits. Here’s how it helps:
+        Research has proven that regular journaling can <span class="bright"
+          >improve both mental and physical health
+        </span>
       </h3>
       <br />
       <ul class="separator-list flex-list-items">
@@ -95,17 +96,9 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright"><strong>Reduces Stress and Anxiety</strong></p>
-            <p>
-              Journaling allows you to unload overwhelming thoughts, providing
-              relief from daily stress
-            </p>
-            <p>
-              By organizing your thoughts, you can better manage anxiety
-              triggers, lower cortisol levels and promote calmness
-            </p>
-          </div>
+          <p>
+            <strong>Reduces Stress and Anxiety</strong>
+          </p>
         </li>
         <li>
           <img
@@ -115,19 +108,9 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright">
-              <strong>Enhances Emotional Regulation</strong>
-            </p>
-            <p>
-              Writing down your emotions helps clarify them, making it easier to
-              regulate your mood
-            </p>
-            <p>
-              This process can lead to a more balanced emotional state, offering
-              clarity in emotional reactions
-            </p>
-          </div>
+          <p>
+            <strong>Enhances Emotional Regulation</strong>
+          </p>
         </li>
         <li>
           <img
@@ -137,19 +120,9 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright">
-              <strong>Improves Mood and Well-being</strong>
-            </p>
-            <p>
-              Regular journaling increases self-reflection, which fosters
-              positive thinking and emotional resilience
-            </p>
-            <p>
-              It’s been linked to enhanced overall well-being and fewer
-              depressive symptoms
-            </p>
-          </div>
+          <p>
+            <strong>Improves Mood and Well-being</strong>
+          </p>
         </li>
         <li>
           <img
@@ -159,17 +132,9 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright">
-              <strong>Facilitates Problem Solving and Cognitive Function</strong
-              >
-            </p>
-            <p>
-              By organizing thoughts into words, journaling sharpens cognitive
-              processes like critical thinking and problem-solving
-            </p>
-            <p>It helps break down complex issues into manageable solutions</p>
-          </div>
+          <p>
+            <strong>Facilitates Problem Solving and Cognitive Function</strong>
+          </p>
         </li>
         <li>
           <img
@@ -179,15 +144,9 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright">
-              <strong>Boosts Memory and Immune Function</strong>
-            </p>
-            <p>
-              Expressive writing improves memory retention and enhances immune
-              function by reducing the impact of stress on the body
-            </p>
-          </div>
+          <p>
+            <strong>Boosts Memory and Immune Function</strong>
+          </p>
         </li>
         <li>
           <img
@@ -197,118 +156,122 @@ const description = Var.app.description
             height="32"
             alt="green check"
           />
-          <div>
-            <p class="bright">
-              <strong>Enhances Self-Awareness and Encourages Mindfulness</strong
-              >
-            </p>
-            <p>
-              Journaling allows you to reflect deeply on your thoughts and
-              behaviors
-            </p>
-            <p>
-              It increases self-awareness and promotes mindfulness, leading to
-              better self-understanding and personal growth
-            </p>
-          </div>
+          <p>
+            <strong>Enhances Self-Awareness and Encourages Mindfulness</strong>
+          </p>
         </li>
       </ul>
+      <p>(Journaling - The Complete List of Benefits (2024)</p>
     </article>
   </Section>
   <Section>
     <h2>Why Choose {Var.app.name} for Private Journaling?</h2>
     <article>
       <h3>
-        At {Var.app.name}, we prioritize your privacy and confidentiality. Your
-        thoughts stay truly personal on our private and anonymous platform
+        Your thoughts stay truly personal on our anonymous and private platform.
+        <span class="bright">We prioritize your confidentiality</span>
       </h3>
       <br />
-      <ul class="separator-list flex-list-items">
-        <li>
+      <div class="gallery">
+        <div class="gallery__item">
           <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
+            class="benefits__icons"
+            src="./mask.svg"
+            width="56"
+            height="56"
+            alt="Innerpage is 100% anonymous"
           />
-          <div>
-            <p class="bright"><strong>100% Anonymous</strong></p>
-            <p>
-              No email or phone number required — create your account with just
-              username and password
-            </p>
-          </div>
-        </li>
-        <li>
+          <p>
+            <span class="bright">
+              <strong>100% Anonymous</strong>
+            </span><br />
+            Create account with username and password
+          </p>
+        </div>
+        <div class="gallery__item">
           <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
+            class="benefits__icons"
+            src="./lock.svg"
+            width="56"
+            height="56"
+            alt="Innerpage is a private space"
           />
-          <div>
-            <p class="bright"><strong>Private Space</strong></p>
-            <p>
-              {Var.app.name} is not a social platform. No likes, comments, or sharing.
-              Your journal is completely personal
-            </p>
-          </div>
-        </li>
-        <li>
+          <p>
+            <span class="bright">
+              <strong>Fully Private</strong>
+            </span><br />
+            Just you & your thoughts. No social features
+          </p>
+        </div>
+        <div class="gallery__item">
           <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
+            class="benefits__icons"
+            src="./cycle.svg"
+            width="56"
+            height="56"
+            alt="Innerpage doesn not collect your data"
           />
-          <div>
-            <p class="bright"><strong>No Data Collection</strong></p>
-            <p>We never track, analyze, or store your journaling habits</p>
-          </div>
-        </li>
-        <li>
+          <p>
+            <span class="bright">
+              <strong>Habit Forming</strong>
+            </span><br />
+            Motivates you to build journaling habit
+          </p>
+        </div>
+        <div class="gallery__item">
           <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
+            class="benefits__icons"
+            src="./visibility-off.svg"
+            width="56"
+            height="56"
+            alt="Innerpage doesn not collect your data"
           />
-          <div>
-            <p class="bright"><strong>Full Data Control</strong></p>
-            <p>Delete your account and entries anytime, without any hassle</p>
-          </div>
-        </li>
-        <li>
+          <p>
+            <span class="bright">
+              <strong>No Data Collection</strong>
+            </span><br />
+            Your data is neither tracked nor analyzed
+          </p>
+        </div>
+        <div class="gallery__item">
           <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
+            class="benefits__icons"
+            src="./tune.svg"
+            width="56"
+            height="56"
+            alt="Innerpage offers full data control"
           />
-          <div>
-            <p class="bright">
+          <p>
+            <span class="bright">
+              <strong>Full Data Control</strong>
+            </span><br />
+            Delete your account & data anytime you want
+          </p>
+        </div>
+        <div class="gallery__item">
+          <img
+            class="benefits__icons"
+            src="./share-off.svg"
+            width="56"
+            height="56"
+            alt="Innerpage does not share your data with third-parties"
+          />
+          <p>
+            <span class="bright">
               <strong>No Third-Party Sharing</strong>
-            </p>
-            <p>
-              Your data is never shared or sold — your thoughts are yours alone
-            </p>
-          </div>
-        </li>
-      </ul>
+            </span><br />
+            We will never sell or store your data
+          </p>
+        </div>
+      </div>
     </article>
   </Section>
   <Section>
-    <h2>Our Commitment to Open Source</h2>
+    <h2>{Var.app.name} is open source</h2>
     <article>
       <h3>
-        <span class="bright">{Var.app.name} is open source</span>, empowering
-        users to freely utilize the codebase for personal, non-commercial, or
-        commercial projects (in accordance with the license terms)
+        We empower you to utilize the codebase for personal, non-commercial or
+        commercial use (as per license)
       </h3>
       <br />
       <ul class="separator-list">
@@ -352,6 +315,11 @@ const description = Var.app.description
 </Site>
 
 <style>
+  .benefits__icons {
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+  }
+
   .hero {
     width: 680px;
   }
@@ -383,15 +351,38 @@ const description = Var.app.description
     left: -10%;
     animation: blowing 10s 1s linear infinite;
   }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .gallery__item {
+    width: 300px;
+    border: var(--border);
+    padding: calc(var(--padding) * 2) calc(var(--padding) * 1.5);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+
   .petal:nth-child(2) {
     top: 30vh;
     left: -10%;
     animation: blowing 8s linear infinite;
   }
+
   .petal:nth-child(3) {
     top: 40vh;
     left: -10%;
     animation: blowing 9s 3s linear infinite;
+  }
+
+  .quote {
+    background: -webkit-linear-gradient(#eeb3b3, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @keyframes blowing {
@@ -418,3 +409,15 @@ const description = Var.app.description
     }
   }
 </style>
+
+<script
+  data-name="BMC-Widget"
+  data-cfasync="false"
+  src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="innerpage"
+  data-description="If you love journaling please support us!"
+  data-message="Support Innerpage"
+  data-color="#BD5FFF"
+  data-position="Top"
+  data-x_margin="30"
+  data-y_margin="30"></script>
