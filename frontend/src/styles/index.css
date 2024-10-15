@@ -121,7 +121,7 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   body {
     width: 90%;
     box-sizing: border-box;
