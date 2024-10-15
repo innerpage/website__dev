@@ -114,85 +114,101 @@ const description = Var.app.description
     />
   </Section>
   <Section>
-    <article>
-      <div class="gallery">
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./diversity.svg"
-            width="56"
-            height="56"
-            alt="Innerpage is free to use because good mental health is a human right"
-          />
-          <p>
-            <span class="bright">
-              <strong>Free to use</strong>
-            </span><br />
-            Because good mental health is a human right
-          </p>
-        </div>
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./open-lock.svg"
-            width="56"
-            height="56"
-            alt="Innerpage doesn not collect your data"
-          />
-          <p>
-            <span class="bright">
-              <strong>Open-source</strong>
-            </span><br />
-            Your data is neither tracked nor analyzed
-          </p>
-        </div>
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./visibility-off.svg"
-            width="56"
-            height="56"
-            alt="Innerpage doesn not collect your data"
-          />
-          <p>
-            <span class="bright">
-              <strong>No analytics</strong>
-            </span><br />
-            Your data is neither tracked nor analyzed
-          </p>
-        </div>
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./tune.svg"
-            width="56"
-            height="56"
-            alt="Innerpage offers full data control"
-          />
-          <p>
-            <span class="bright">
-              <strong>Full Data Control</strong>
-            </span><br />
-            Delete your account & data anytime you want
-          </p>
-        </div>
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./share-off.svg"
-            width="56"
-            height="56"
-            alt="Innerpage does not share your data with third-parties"
-          />
-          <p>
-            <span class="bright">
-              <strong>No Third-Party Sharing</strong>
-            </span><br />
-            We will never sell or store your data
-          </p>
-        </div>
+    <div class="gallery">
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./diversity.svg"
+          width="56"
+          height="56"
+          alt="Innerpage is free-to-use"
+        />
+        <p>
+          <span class="bright">
+            <strong>Free to Use</strong>
+          </span><br />
+          Because peak mental health is a human right
+        </p>
       </div>
-    </article>
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./open-lock.svg"
+          width="56"
+          height="56"
+          alt="Innerpage is open-source"
+        />
+        <p>
+          <span class="bright">
+            <strong>Open-Source</strong>
+          </span><br />
+          Feel free to modify and extend the <Link
+            href="https://github.com/innerpage"
+            target="_blank">codebase</Link
+          >
+        </p>
+      </div>
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./visibility-off.svg"
+          width="56"
+          height="56"
+          alt="Innerpage doesn not collect your data"
+        />
+        <p>
+          <span class="bright">
+            <strong>No Tracking</strong>
+          </span><br />
+          Your data is neither tracked nor analyzed
+        </p>
+      </div>
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./tune.svg"
+          width="56"
+          height="56"
+          alt="Innerpage offers full data control"
+        />
+        <p>
+          <span class="bright">
+            <strong>Full Data Control</strong>
+          </span><br />
+          Delete your account & data anytime you want
+        </p>
+      </div>
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./share-off.svg"
+          width="56"
+          height="56"
+          alt="Innerpage does not share your data with third-parties"
+        />
+        <p>
+          <span class="bright">
+            <strong>No Third-Party</strong>
+          </span><br />
+          Your data will never be sold or shared
+        </p>
+      </div>
+      <div class="gallery__item">
+        <img
+          class="benefits__icons"
+          src="./encryption.svg"
+          width="56"
+          height="56"
+          alt="Innerpage will soon be end-to-end encrypted"
+        />
+        <p>
+          <span class="bright">
+            <strong>End-to-end Encryption</strong>
+          </span><br />
+          Coming Soon
+        </p>
+      </div>
+    </div>
   </Section>
   <Section>
     <h2>Contact Us</h2>
@@ -234,7 +250,7 @@ const description = Var.app.description
   }
 
   .featured_images {
-    max-width: 720px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
     margin-top: 2em;
