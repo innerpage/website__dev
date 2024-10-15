@@ -113,6 +113,14 @@ p {
   border-radius: var(--border-radius);
 }
 
+.display-on-desktop {
+  display: block;
+}
+
+.display-on-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   body {
     width: 90%;
@@ -136,5 +144,13 @@ p {
 
   .blog {
     max-width: 40ch;
+  }
+
+  .display-on-desktop {
+    display: none;
+  }
+
+  .display-on-mobile {
+    display: block;
   }
 }

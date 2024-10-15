@@ -21,14 +21,15 @@ const description = Var.app.description
         {Var.app.name} is a free and anonymous journal for privacy conscious people
       </h2>
     </div>
-
     <Link
       href={Var.app.url}
       variant="button"
       fill="solid"
       theme="default"
-      size="small"><strong>Start Journaling</strong></Link
+      size="small"
     >
+      <strong>Start Journaling</strong>
+    </Link>
   </Section>
   <Section>
     <article>
@@ -48,30 +49,16 @@ const description = Var.app.description
         </li>
         <li>
           <h2 class="quote">
-            The process of putting emotions into words seems to unintentionally
-            activate a process of emotion regulation
+            Writing about traumatic experience can have positive effect on both
+            mental and physical health
           </h2>
-          <p class="footnote">
-            <Link
-              target="_blank"
-              href="https://blogs.kcl.ac.uk/editlab/2018/03/16/putting-feelings-into-words-the-beneficial-effects-of-affect-labelling/"
-            >
-              <strong>Putting feelings into words</strong>
-            </Link><br />Edit Lab, King’s College London
-          </p>
-        </li>
-        <li>
-          <h2 class="quote">
-            Writing about traumatic experience had significant effect on mental
-            health, physical health & a variety of other behaviours
-          </h2>
-
           <p class="footnote">
             <Link
               target="_blank"
               href="https://www.youtube.com/watch?v=XsHIV9PxAV4"
-              ><strong>The expressive writing method</strong></Link
-            ><br />
+            >
+              <strong>The expressive writing method</strong>
+            </Link><br />
             James Pennebaker
           </p>
         </li>
@@ -79,142 +66,84 @@ const description = Var.app.description
     </article>
   </Section>
   <Section>
-    <h2>Benefits of Journaling</h2>
-    <article>
-      <h3>
-        Research has proven that regular journaling can <span class="bright"
-          >improve both mental and physical health
-        </span>
-      </h3>
-      <br />
-      <ul class="separator-list flex-list-items">
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Reduces Stress and Anxiety</strong>
-          </p>
-        </li>
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Enhances Emotional Regulation</strong>
-          </p>
-        </li>
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Improves Mood and Well-being</strong>
-          </p>
-        </li>
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Facilitates Problem Solving and Cognitive Function</strong>
-          </p>
-        </li>
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Boosts Memory and Immune Function</strong>
-          </p>
-        </li>
-        <li>
-          <img
-            class="check-icon"
-            src="./check.svg"
-            width="24"
-            height="32"
-            alt="green check"
-          />
-          <p>
-            <strong>Enhances Self-Awareness and Encourages Mindfulness</strong>
-          </p>
-        </li>
-      </ul>
-    </article>
+    <h2>100% Anonymous</h2>
+    <h3>Create account with just a username & password</h3>
+    <img
+      class="featured_images display-on-desktop"
+      width="75%"
+      src="./login-desktop.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
+    <img
+      class="featured_images display-on-mobile"
+      width="100%"
+      src="./login-mobile.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
   </Section>
   <Section>
-    <h2>Why Choose {Var.app.name} for Private Journaling?</h2>
+    <h2>Not a social platform</h2>
+    <h3>Just you and your thoughts. No likes, comments or shares</h3>
+    <img
+      class="featured_images display-on-desktop"
+      width="75%"
+      src="./home-desktop.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
+    <img
+      class="featured_images display-on-mobile"
+      width="100%"
+      src="./home-mobile.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
+  </Section>
+  <Section>
+    <h2>Minimalistic</h2>
+    <h3>Designed for the joy of writing. Clutter-free and text-only</h3>
+    <img
+      class="featured_images display-on-desktop"
+      width="75%"
+      src="./journal-desktop.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
+    <img
+      class="featured_images display-on-mobile"
+      width="100%"
+      src="./journal-mobile.jpg"
+      alt="Innerpage doesn not collect your data"
+    />
+  </Section>
+  <Section>
     <article>
-      <h3>
-        Your thoughts stay truly personal on our anonymous and private platform.
-        <span class="bright">We prioritize your confidentiality</span>
-      </h3>
-      <br />
       <div class="gallery">
         <div class="gallery__item">
           <img
             class="benefits__icons"
-            src="./mask.svg"
+            src="./diversity.svg"
             width="56"
             height="56"
-            alt="Innerpage is 100% anonymous"
+            alt="Innerpage is free to use because good mental health is a human right"
           />
           <p>
             <span class="bright">
-              <strong>100% Anonymous</strong>
+              <strong>Free to use</strong>
             </span><br />
-            Create account with username and password
+            Because good mental health is a human right
           </p>
         </div>
         <div class="gallery__item">
           <img
             class="benefits__icons"
-            src="./lock.svg"
-            width="56"
-            height="56"
-            alt="Innerpage is a private space"
-          />
-          <p>
-            <span class="bright">
-              <strong>Fully Private</strong>
-            </span><br />
-            Just you & your thoughts. No social features
-          </p>
-        </div>
-        <div class="gallery__item">
-          <img
-            class="benefits__icons"
-            src="./cycle.svg"
+            src="./open-lock.svg"
             width="56"
             height="56"
             alt="Innerpage doesn not collect your data"
           />
           <p>
             <span class="bright">
-              <strong>Habit Forming</strong>
+              <strong>Open-source</strong>
             </span><br />
-            Motivates you to build journaling habit
+            Your data is neither tracked nor analyzed
           </p>
         </div>
         <div class="gallery__item">
@@ -227,7 +156,7 @@ const description = Var.app.description
           />
           <p>
             <span class="bright">
-              <strong>No Data Collection</strong>
+              <strong>No analytics</strong>
             </span><br />
             Your data is neither tracked nor analyzed
           </p>
@@ -266,35 +195,8 @@ const description = Var.app.description
     </article>
   </Section>
   <Section>
-    <h2>{Var.app.name} is open source</h2>
-    <article>
-      <h3>
-        We empower you to utilize the codebase for personal, non-commercial or
-        commercial use (as per license)
-      </h3>
-      <br />
-      <ul class="separator-list">
-        <li>
-          License:&nbsp;&nbsp;<Link
-            href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-            >GNU GPL v3.0</Link
-          >
-        </li>
-        <li>
-          Source Code:&nbsp;&nbsp;<Link href="https://github.com/innerpage"
-            >https://github.com/innerpage</Link
-          >
-        </li>
-      </ul>
-    </article>
-  </Section>
-  <Section>
     <h2>Contact Us</h2>
     <article>
-      <h3>
-        Kindly reach out to us for any kind of assistance, feature requests or
-        bug reports:
-      </h3>
       <br />
       <ul class="separator-list">
         <li>
@@ -329,6 +231,16 @@ const description = Var.app.description
 
   .flex-list-items li {
     display: flex;
+  }
+
+  .featured_images {
+    max-width: 720px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    margin-top: 2em;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(238, 179, 179, 0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(238, 179, 179, 0.3);
+    box-shadow: 0px 0px 20px 0px rgba(238, 179, 179, 0.3);
   }
 
   li p {
@@ -405,6 +317,13 @@ const description = Var.app.description
   @media only screen and (max-width: 1024px) {
     .hero {
       width: 100%;
+    }
+
+    .featured_images {
+      max-width: 320px;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(238, 179, 179, 0.2);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(238, 179, 179, 0.2);
+      box-shadow: 0px 0px 10px 0px rgba(238, 179, 179, 0.2);
     }
   }
 </style>
