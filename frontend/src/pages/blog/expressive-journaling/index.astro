@@ -1,0 +1,131 @@
+---
+import Site from '../../../layouts/Site.astro'
+import Section from '../../../components/container/Section.astro'
+import Link from '../../../components/elements/Link.astro'
+import BlogHeader from '../../../components/patterns/blog/BlogHeader.astro'
+import BlogScrollTop from '../../../components/patterns/blog/BlogScrollTop.astro'
+
+import { Var } from '../../../script/var'
+
+const title = `Expressive Journaling: A Beginner's Guide to
+            Reducing Stress, Anxiety, and Depression | ${Var.app.name} – ${Var.app.tagline}`
+const description = `Discover mental health tips, journaling techniques, and research insights on the ${Var.app.name} Blog. Learn how secure journaling can enhance your emotional well-being and mindfulness`
+---
+
+<Site title={title} description={description}>
+  <Section>
+    <article class="blog">
+      <BlogHeader
+        title="Getting Started with Expressive Journaling: A Beginner's Guide to Reducing Stress, Anxiety, and Depression"
+        date="04 January 2025"
+        action="compiled"
+        authorName={Var.blog.author.tuhin.name}
+        authorUrl={Var.blog.author.tuhin.url}
+      />
+      <p>
+        In today's fast-paced and often overwhelming world, stress, anxiety, and
+        depression have become common experiences.
+      </p>
+      <p>
+        For many, these mental health struggles can feel like insurmountable
+        obstacles.
+      </p>
+      <p>
+        However, finding effective ways to cope with these challenges is crucial
+        for maintaining mental and emotional well-being.
+      </p>
+      <p>
+        One of the most effective and accessible methods of managing stress and
+        improving mental health is expressive journaling.
+      </p>
+      <p>
+        This therapeutic practice involves writing about your emotions and
+        thoughts in a free-flowing, uncensored manner, helping you process
+        difficult feelings and gain greater self-awareness.
+      </p>
+      <p>
+        This guide will walk you through the basics of expressive journaling,
+        its benefits, and how the online platform <Link
+          href="https://innerpage.org">InnerPage</Link
+        > can provide a safe, anonymous space for your journaling journey.
+      </p>
+      <div class="separator"></div>
+      <h2>Contents</h2>
+      <ul class="bullet-list--disc left-margin">
+        <li>
+          <Link href="#understanding-expressive-journaling">
+            Understanding Expressive Journaling
+          </Link>
+        </li>
+        <li>
+          <Link href="#benefits-expressive-journaling">
+            Benefits of Expressive Journaling
+          </Link>
+        </li>
+        <li>
+          <Link href="#getting-started-with-expressive-journaling">
+            Getting Started with Expressive Journaling
+          </Link>
+        </li>
+        <li>
+          <Link href="#expressive-journaling-with-innerpage">
+            Expressive Journaling with InnerPage
+          </Link>
+        </li>
+        <li>
+          <Link href="#faq"> Frequently Asked Questions </Link>
+        </li>
+        <li>
+          <Link href="#conclusion"> Conclusion </Link>
+        </li>
+      </ul>
+      <div id="power-of-expressive-journaling" class="separator"></div>
+      <h2>Understanding Expressive Journaling</h2>
+      <p>
+        Expressive journaling is not simply about documenting your daily
+        activities—it's a deep, reflective practice that encourages you to
+        explore your inner world.
+      </p>
+      <p>
+        Unlike traditional journaling, where you may focus on recording external
+        events, expressive journaling prioritizes emotional expression.
+      </p>
+      <p>
+        Expressive journaling involves writing freely without worrying about
+        grammar, spelling, or structure. The focus is on expressing emotions and
+        thoughts honestly.
+      </p>
+      <p>
+        By putting your feelings into words, you can process them in a healthy
+        way, leading to significant mental health improvements.
+      </p>
+      <p>
+        This practice has been proven to reduce stress, manage anxiety, and
+        alleviate symptoms of depression.
+      </p>
+      <div id="getting-started-with-expressive-journaling" class="separator">
+      </div>
+      <h2>Getting Started with Expressive Journaling</h2>
+      <div id="expressive-journaling-with-innerpage" class="separator"></div>
+      <h2>Expressive Journaling with InnerPage</h2>
+      <div id="faq" class="separator"></div>
+      <h2>Frequently Asked Questions</h2>
+      <div id="conclusion" class="separator"></div>
+      <h2>Conclusion</h2>
+      <p>
+        Expressive journaling is a powerful tool for managing stress, anxiety,
+        and depression.
+      </p>
+      <p>
+        By providing a secure and anonymous journal platform, InnerPage makes it
+        easier for beginners to start and maintain this beneficial practice.
+      </p>
+      <p>
+        Embarking on this journey can lead to profound personal insights,
+        emotional healing, and improved mental well-being.
+      </p>
+      <p>Remember, the key is consistency and honesty with yourself.</p>
+      <Link href="https://app.innerpage.org"> Start Journaling Now → </Link>
+    </article>
+  </Section>
+</Site>

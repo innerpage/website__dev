@@ -94,6 +94,17 @@ p {
   color: var(--color__gray--100);
 }
 
+.bubble {
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+  padding: 0.25em 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+}
+
 .footnote {
   font-size: 0.8em;
   color: var(--color__gray--400);
