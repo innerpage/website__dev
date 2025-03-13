@@ -4,7 +4,7 @@ import Link from '../../components/elements/Link.astro'
 ---
 
 <footer>
-  <Link href="/">
+  <Link href=`${Var.app.website.url}`>
     <img
       width="150"
       height="29"
@@ -14,8 +14,8 @@ import Link from '../../components/elements/Link.astro'
   </Link>
   <br /><br />
   <ul>
-    <li><Link href="/terms-of-service">Terms of Service</Link></li>
-    <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+    <li><Link href=`${Var.app.website.url}/terms-of-service/`>Terms of Service</Link></li>
+    <li><Link href=`${Var.app.website.url}/privacy-policy/`>Privacy Policy</Link></li>
   </ul>
   <br />
   <p class="footnote">

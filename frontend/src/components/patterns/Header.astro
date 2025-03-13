@@ -4,7 +4,7 @@ import { Var } from '../../script/var'
 ---
 
 <header>
-  <Link href="/">
+  <Link href=`${Var.app.website.url}/`>
     <img
       class="logotype"
       width="150"
@@ -22,15 +22,15 @@ import { Var } from '../../script/var'
     />
   </Link>
   <nav>
-    <Link variant="bright" href="https://app.innerpage.org">Write Now</Link>
+    <Link variant="bright" href="https://app.innerpage.org/">Write Now</Link>
     &nbsp; &nbsp;&nbsp; &nbsp;
-    <Link variant="bright" href="/blog">Blog</Link>
+    <Link variant="bright" href=`${Var.app.website.url}/blog/`>Blog</Link>
     &nbsp; &nbsp;&nbsp; &nbsp;
-    <Link variant="bright" href="https://github.com/innerpage" target="_blank"
+    <Link variant="bright" href="https://github.com/innerpage/" target="_blank"
       >Github</Link
     >
     &nbsp; &nbsp;&nbsp; &nbsp;
-    <Link variant="bright" href="/support-us">Support Us</Link>
+    <Link variant="bright" href=`${Var.app.website.url}/support-us/`>Support Us</Link>
   </nav>
 </header>
 <style>
