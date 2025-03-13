@@ -28,6 +28,9 @@ const { title, description } = Astro.props
     <meta property="og:image:alt" content={description} />
     <meta property="og:url" content={Var.app.website.url} />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href={Var.app.website.url + Astro.url.pathname} />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="sitemap" href="/sitemap-0.xml" />
     <link
