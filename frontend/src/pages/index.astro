@@ -18,7 +18,7 @@ const description = Var.app.description
     <div class="hero">
       <h1>{Var.app.tagline}</h1>
       <h2>
-        {Var.app.name} is a free and anonymous diary for privacy conscious people
+        {Var.app.name} is a free and anonymous digital diary for privacy conscious people
       </h2>
     </div>
     <Link
@@ -67,7 +67,7 @@ const description = Var.app.description
   </Section>
   <Section>
     <h2>100% Anonymous</h2>
-    <h3>Create account with just a username & password</h3>
+    <h3>Create account with just a username & password. No email, mobile or other identifying information is required to create an account</h3>
     <img
       class="featured_images display-on-desktop"
       width="75%"
@@ -83,7 +83,7 @@ const description = Var.app.description
   </Section>
   <Section>
     <h2>Not a social platform</h2>
-    <h3>Just you and your thoughts. No likes, comments or shares</h3>
+    <h3>No likes, comments or shares. Just you and your thoughts. Innerpage is your safest place</h3>
     <img
       class="featured_images display-on-desktop"
       width="75%"
@@ -99,7 +99,7 @@ const description = Var.app.description
   </Section>
   <Section>
     <h2>Minimalistic</h2>
-    <h3>Designed for the joy of writing. Clutter-free and text-only</h3>
+    <h3>Innerpage is text-only and clutter-free. Designed purely for the joy of writing and expressing your thoughts in an un-filtered manner</h3>
     <img
       class="featured_images display-on-desktop"
       width="75%"
@@ -211,22 +211,22 @@ const description = Var.app.description
     </div>
   </Section>
   <Section>
+    <h2>Support Innerpage</h2>
+    <article>
+      <p>Your support keeps InnerPage alive. By donating, you help others experience the benefits of journaling. We accept support from both individuals or organisations</p>
+      <p>We make sure that Innerpage accounts are completely disjoint from the support activities. So, when an Innerpage user supports us monetarily with their real ID (required for payments), their anonymity is strictly maintained as per our values.</p>
+      <Link href=`${Var.app.website.url}/support/`
+            >Read more about supporting Innerpage</Link
+          >
+    </article>
+  </Section>
+  <Section>
     <h2>Contact Us</h2>
     <article>
-      <br />
-      <ul class="separator-list">
-        <li>
-          Email:&nbsp;&nbsp;<Link href={`mailto:${Var.app.contact.email}`}
+      <p>Write to us with your feedback, feature requests or bug reports:</p>
+      <Link href={`mailto:${Var.app.contact.email}`}
             >{Var.app.contact.email}</Link
           >
-        </li>
-        <!-- <li>
-          Twitter:&nbsp;&nbsp;<Link
-            href={Var.app.contact.social.twitter}
-            target="_blank">{Var.app.contact.social.twitter}</Link
-          >
-        </li> -->
-      </ul>
     </article>
   </Section>
 </Site>
